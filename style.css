@@ -99,7 +99,7 @@ body {
   
   .banner-section img {
     padding-top: 70px;
-    max-height: 850px;
+    max-height: 100%;
     object-fit: cover;
   }
   #about p {
