@@ -415,3 +415,242 @@ body {
 .agenda-table tr:hover {
   background-color: #f9f9f9;
 }
+/*speaker*/
+.speakers-section {
+  background: #f8f9fa;
+}
+
+.section-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.section-title .highlight {
+  color: #B04B3B;
+}
+
+.speaker-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.speaker-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.speaker-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.speaker-card:hover .speaker-img img {
+  transform: scale(1.08);
+}
+
+.speaker-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, transparent, rgba(0,0,0,1.2));
+  color: #fff;
+  padding: 20px;
+  transition: background 0.3s ease;
+}
+
+.speaker-overlay h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.speaker-overlay p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+/* --- Speakers Slide Section --- */
+.speakers-slide-section {
+  background: #f8f9fa;
+}
+
+.speakers-slide-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.speakers-slide-title .highlight {
+  color: #B04B3B;
+}
+
+.speaker-slide-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.speaker-slide-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.speaker-slide-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker-slide-img img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.speaker-slide-info {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  background: rgba(176, 75, 59, 0.95);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  transition: bottom 0.4s ease;
+}
+
+.speaker-slide-info h5 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.speaker-slide-info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.speaker-slide-card:hover .speaker-slide-info {
+  bottom: 0;
+}
+
+/* --- Speakers Split Section --- */
+.speakers-split-section {
+  background: #fff;
+}
+
+.speakers-split-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.speakers-split-title .highlight {
+  color: #3A81AD;
+}
+
+.speakers-split-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.speakers-split-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.speakers-split-img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.speakers-split-name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.speakers-split-designation {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 8px;
+}
+/*speakers*/
+.speakers-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.speakers-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.speakers-card:hover {
+  transform: translateY(-5px);
+}
+
+.speakers-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.speakers-card-body {
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.speakers-card-body h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.speakers-card-body .designation {
+  font-weight: 600;
+  color: #3A81AD;
+  margin-bottom: 0.2rem;
+}
+
+.speakers-card-body .organization {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.8rem;
+}
+
+.topic-badge {
+  display: inline-block;
+  background: rgba(255, 102, 0, 0.1);
+  color: #3A81AD;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
