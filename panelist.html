@@ -1,228 +1,471 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Panelists</title>
-    <link rel="stylesheet" href="panelist.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FACE 2025 – Speakers & Panelists</title>
+  <link rel="stylesheet" href="panelist.css">
+  <!-- Optional: Google Fonts consistent with your preference -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-    <a href="javascript:history.back()" class="back-btn" title="Go Back">←</a>
+  <!-- Back -->
+  <a href="javascript:history.back()" class="back-btn" title="Go Back">←</a>
 
-   
+  <!-- Page Header -->
+  <header class="container" style="padding-top:16px;">
+    <h1 class="panelist-title" style="margin-bottom:10px;">
+      <span class="highlight" style="background:#3A81AD; color:#fff; padding:4px 10px; border-radius:8px;">
+        Speakers & Panelists
+      </span>
+    </h1>
+    <p class="muted" style="margin:6px 0 18px;">Meet the experts across our three tracks.</p>
+  </header>
 
-    <!-- AI & Cybersecurity -->
-    <section class="panelist-section ai-bg">
-        <div class="container">
-            <h2 class="panelist-title"><span class="highlight blue">Track : AI & Cybersecurity</span></h2>
-            <div class="speakers-card-grid">
+  <!-- Filter / Search Bar -->
+  <section class="container filter-bar" aria-label="Filter speakers and panelists">
+    <div class="filter-row">
+      <div class="filter-group">
+        <label for="trackFilter">Track</label>
+        <select id="trackFilter">
+          <option value="all">All Tracks</option>
+          <option value="Sustainability">Sustainability</option>
+          <option value="Medical">Medical Devices & Therapies</option>
+          <option value="AI">AI & Cybersecurity</option>
+        </select>
+      </div>
 
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Mr.Ambuj Kumar.png" alt="Mr.Ambuj Kumar">
-                    <div class="speakers-card-body">
-                        <h5>Mr.Ambuj Kumar</h5>
-                        <p class="designation">Founder and CEO </p>
-                        <p class="organization">Fortanix and Simbian</p>
-                        <span class="topic-badge">"Panelist"</span>
+      <div class="filter-group">
+        <label for="roleFilter">Role</label>
+        <select id="roleFilter">
+          <option value="all">All Roles</option>
+          <option value="Panelist">Panelist</option>
+          <option value="Speaker">Speaker</option>
+        </select>
+      </div>
 
-                    </div>
-                </div>
-
-                
-
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Paritosh Anand.png" alt="Paritosh Anand">
-                    <div class="speakers-card-body">
-                        <h5>Paritosh Anand</h5>
-                        <p class="designation">Chief AI and Digital Officer</p>
-                        <p class="organization">Wadhwani Foundation</p>
-                        <span class="topic-badge">"Panelist"</span>
-
-                    </div>
-                </div>
-                <div class="speakers-card">
-                    <img src="" alt="Prof.Ambuj Tewari">
-                    <div class="speakers-card-body">
-                        <h5>Mr. Rajesh Gupta</h5>
-                        <p class="designation">Professor and Qualcomm Endowed Chair</p>
-                        <p class="organization">University of California</p>
-                        <span class="topic-badge">"Speaker"</span>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
- <!-- Sustainability -->
- <section class="panelist-section sustainability-bg">
-    <div class="container">
-        <h2 class="panelist-title"><span class="highlight green">Track : Sustainability</span></h2>
-
-        <section class="speakers-card-section py-5">
-            <div class="container">
-                <div class="speakers-card-grid">
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Prof. Sheshadri.png" alt="Prof. Sheshadri">
-                        <div class="speakers-card-body">
-                            <h5>Prof. Sheshadri</h5>
-                            <p class="designation">Assistant Professor of Earth System Science</p>
-                            <p class="organization">Stanford University</p>
-                            <span class="topic-badge">"Panelist"</span>
-
-                        </div>
-                    </div>
-
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr. Nanditha J S.png" alt="Dr. Nanditha J S">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Nanditha J S</h5>
-                            <p class="designation">Assistant Professor</p>
-                            <p class="organization">KSS IIT Kanpur</p>
-                            <span class="topic-badge">"Panelist"</span>
-
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr. Deepjyoti Deka.png" alt="Dr. Deepjyoti Deka">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Deepjyoti Deka</h5>
-                            <p class="designation">Assistant Professor</p>
-                            <p class="organization">KSS IIT Kanpur</p>
-                            <span class="topic-badge">"Panelist"</span>
-
-                        </div>
-                    </div>
-                    <!-- Already Speakers-Card -->
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr. Nitash P. Balsara.png" alt="Dr. Nitash P. Balsara">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Nitash P. Balsara</h5>
-                            <p class="designation">Professor, Chemical & Biomolecular Engineering</p>
-                            <p class="organization">UC Berkeley</p>
-                            <span class="topic-badge">"Speaker"</span>
-                        </div>
-                    </div>
-
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr.Deepak Divan.png" alt="Dr. Deepak Divan">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Deepak Divan</h5>
-                            <p class="designation">Professor, Electrical & Computer Engineering</p>
-                            <p class="organization">Georgia Institute of Technology, Atlanta</p>
-                            <span class="topic-badge">"Speaker"</span>
-                        </div>
-                    </div>
-
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr Rajendra Bhattarai.png" alt="Dr. Rajendra Bhattarai">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Rajendra Bhattarai</h5>
-                            <p class="designation">President,<br /> Clean Water Strategies</p>
-                            <p class="organization">Austin, Texas</p>
-                            <span class="topic-badge">"Speaker"</span>
-                        </div>
-                    </div>
-
-                    <div class="speakers-card">
-                        <img src="speakes&panelist/Dr. Manvendra K. Dubey.png" alt="Dr. Manvendra K. Dubey">
-                        <div class="speakers-card-body">
-                            <h5>Dr. Manvendra K. Dubey</h5>
-                            <p class="designation">Senior Scientist, Earth Systems Observations</p>
-                            <p class="organization">Los Alamos National Laboratory, USA</p>
-                            <span class="topic-badge">"Speaker"</span>
-                        </div>
-                    </div>
-
-               
-                   
-
-                </div>
-            </div>
-        </section>
+      <div class="filter-group grow">
+        <label for="searchInput">Search</label>
+        <input id="searchInput" type="search" placeholder="Search by name, title, organization…"/>
+      </div>
     </div>
-</section>
-    <!-- Medical -->
-    <section class="panelist-section medical-bg">
-        <div class="container">
-            <h2 class="panelist-title"><span class="highlight pink">Track : Medical Devices & Therapies</span></h2>
-            <div class="speakers-card-grid">
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Raj Shekhar.png" alt="Raj Shekhar">
-                    <div class="speakers-card-body">
-                        <h5>Raj Shekhar</h5>
-                        <p class="designation">Professor, Principal Investigator & Founder</p>
-                        <p class="organization">Children's National Hospital & AusculTech Dx</p>
-                        <span class="topic-badge">"Panelist"</span>
+  </section>
 
-                    </div>
-                </div>
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Prof. Jaideep Srivastava.png" alt="Prof. Jaideep Srivastava">
-                    <div class="speakers-card-body">
-                        <h5>Prof. Jaideep Srivastava</h5>
-                        <p class="designation">Professor, Hubbard School of Journalism and Mass Communication</p>
-                        <p class="organization">University of Minnesota</p>
-                        <span class="topic-badge">"Panelist"</span>
+  <!-- Sustainability -->
+  <section class="panelist-section sustainability-bg" data-track="Sustainability">
+    <div class="container">
+      <h2 class="panelist-title"><span class="highlight green">Track : Sustainability</span></h2>
+      <div class="speakers-card-grid" id="grid-sustainability" aria-live="polite"></div>
+    </div>
+  </section>
 
-                    </div>
-                </div>
-                <div class="speakers-card">
-                    <img src="" alt="Prof. Nitish Badhwar">
-                    <div class="speakers-card-body">
-                        <h5>Prof. Nitish Badhwar</h5>
-                        <p class="designation">MD,Director of Cardiac Electrophysiology Training Program
-                        </p>
-                        <p class="organization"> Stanford University School of Medicine</p>
-                        <span class="topic-badge">"Panelist"</span>
+  <!-- Medical -->
+  <section class="panelist-section medical-bg" data-track="Medical">
+    <div class="container">
+      <h2 class="panelist-title"><span class="highlight pink">Track : Medical Devices & Therapies</span></h2>
+      <div class="speakers-card-grid" id="grid-medical" aria-live="polite"></div>
+    </div>
+  </section>
 
-                    </div>
-                </div>
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Prof Mark Cohen.png" alt="Prof Mark Cohen">
-                    <div class="speakers-card-body">
-                        <h5>Prof Mark Cohen</h5>
-                        <p class="designation">Professor, Orthopaedic Surgery</p>
-                        <p class="organization">Stanford University School of Medicine</p>
-                        <span class="topic-badge">"Speaker"</span>
-                    </div>
-                </div>
+  <!-- AI & Cybersecurity -->
+  <section class="panelist-section ai-bg" data-track="AI">
+    <div class="container">
+      <h2 class="panelist-title"><span class="highlight blue">Track : AI & Cybersecurity</span></h2>
+      <div class="speakers-card-grid" id="grid-ai" aria-live="polite"></div>
+    </div>
+  </section>
 
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Prof Michael Gardner.png" alt="Prof Michael Gardner">
-                    <div class="speakers-card-body">
-                        <h5>Prof Michael Gardner</h5>
-                        <p class="designation">Professor, Orthopaedic Surgery</p>
-                        <p class="organization">Stanford University School of Medicine</p>
-                        <span class="topic-badge">"Speaker"</span>
-                    </div>
-                </div>
+  <!-- Accessible Modal (reusable) -->
+  <div id="bioModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalName" aria-describedby="modalBio" hidden>
+    <div class="modal-content" role="document" tabindex="-1">
+      <button class="close" aria-label="Close bio" data-close>&times;</button>
+      <h3 id="modalName"></h3>
+      <p id="modalTitle" class="muted"></p>
+      <p id="modalOrg" class="muted"></p>
+      <hr/>
+      <p id="modalBio"></p>
+    </div>
+  </div>
 
-                
+  <script>
+    // ---------- DATA: edit bios/titles/orgs here ----------
+    const PEOPLE = [
+      // ===== Sustainability =====
+      {
+        name: "Prof. Aditi Sheshadri",
+        role: "Panelist",
+        title: "Assistant Professor of Earth System Science",
+        org: "Stanford University",
+        img: "speakes&panelist/Prof. Sheshadri.png",
+        track: "Sustainability",
+        bio: `Dr. Aditi Sheshadri is an Assistant Professor of Earth System Science at Stanford University and a Center Fellow at the Woods Institute for the Environment. She researches large-scale atmospheric dynamics, exploring jet streams, storm tracks, the polar vortex, and gravity waves. Combining theory, observations, and modeling, her work advances understanding of weather patterns and their role in the climate system.`
+      },
+      {
+        name: "Dr. Nanditha J S",
+        role: "Panelist",
+        title: "Assistant Professor",
+        org: "KSS IIT Kanpur",
+        img: "speakes&panelist/Dr. Nanditha J S.png",
+        track: "Sustainability",
+        bio: `Dr. Nanditha J. S. is an Assistant Professor in the Kotak School of Sustainability at IIT Kanpur, specializing in Water Resources Engineering. Her work focuses on advancing sustainable water systems and environmental stewardship through both research and practical initiatives. 
 
-                <div class="speakers-card">
-                    <img src="speakes&panelist/Manu Prakash.png" alt="Manu Prakash">
-                    <div class="speakers-card-body">
-                        <h5>Manu Prakash</h5>
-                        <p class="designation">Associate Professor</p>
-                        <p class="organization">Stanford University</p>
-                        <span class="topic-badge">"Panelist"</span>
+`
+      },
+      {
+        name: "Dr. Praneet Prakash",
+        role: "Panelist",
+        title: "Assistant Professor",
+        org: "KSS IIT Kanpur",
+        img: "speakes&panelist/Dr. Praneet Prakash.png",
+        track: "Sustainability",
+        bio: `Dr. Praneet Prakash is an Assistant Professor in the Kotak School of Sustainability at IIT Kanpur. He earned his PhD from the Indian Institute of Science, Bangalore, and was a postdoctoral researcher at the University of Cambridge. His research spans microbial biophysics, biofluids, complex living systems, and sustainable micro/nano-scale sensing technologies. 
+`
+      },
+      {
+        name: "Dr. Deepjyoti Deka",
+        role: "Panelist",
+        title: "Research Scientist",
+        org: "MIT Energy Initiative",
+        img: "speakes&panelist/Dr. Deepjyoti Deka.png",
+        track: "Sustainability",
+        bio: `Dr. Deepjyoti Deka is a Research Scientist at the MIT Energy Initiative, where he develops AI-driven optimization and sensing methods to enable secure, renewable-rich power grids. Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive experience applying data science and physics-informed machine learning to energy and cyber-physical systems, and is a senior IEEE member. 
+`
+      },
+      {
+        name: "Dr. Nitash P. Balsara",
+        role: "Speaker",
+        title: "Professor, Chemical & Biomolecular Engineering",
+        org: "UC Berkeley",
+        img: "speakes&panelist/Dr. Nitash P. Balsara.png",
+        track: "Sustainability",
+        bio: "Dr. Nitash P. Balsara is the Charles W. Tobias Professor in Electrochemistry at UC Berkeley and a Faculty Senior Scientist at Lawrence Berkeley National Laboratory. His research focuses on nanostructured polymer electrolytes for next-generation batteries."
+      },
+      {
+        name: "Dr. Deepak Divan",
+        role: "Speaker",
+        title: "Professor, Electrical & Computer Engineering",
+        org: "Georgia Institute of Technology, Atlanta",
+        img: "speakes&panelist/Dr.Deepak Divan.png",
+        track: "Sustainability",
+        bio: `Dr. Deepakraj M. Divan is the John E. Pippin Chair Professor and Director of the Center for Distributed Energy at Georgia Tech, specializing in power electronics, smart grids, and distributed energy systems. 
+An IEEE Fellow and member of the U.S. National Academy of Engineering, he is known for pioneering soft-switching converters, grid-forming controls, and founding Varentec to advance smart grid innovations.`
 
-                    </div>
-                </div>
 
-                
+      },
+      {
+        name: "Dr. Rajendra Bhattarai",
+        role: "Speaker",
+        title: "President, Clean Water Strategies",
+        org: "Austin, Texas",
+        img: "speakes&panelist/Dr Rajendra Bhattarai.png",
+        track: "Sustainability",
+        bio: `Dr. Rajendra P. Bhattarai is a civil and environmental engineer who has served as President of both the Water Environment Association of Texas and the Texas Association of Clean Water Agencies. An alumnus of IIT Kanpur and UT Austin, he has led transformative water quality and wastewater infrastructure initiatives across Texas, earning numerous state and national honors for his contributions.`
 
-            </div>
-        </div>
-    </section>
+      },
+      {
+        name: "Dr. Manvendra K. Dubey",
+        role: "Speaker",
+        title: "Senior Scientist, Earth Systems Observations",
+        org: "Los Alamos National Laboratory, USA",
+        img: "speakes&panelist/Dr. Manvendra K. Dubey.png",
+        track: "Sustainability",
+        bio: `Dr. Manvendra K. Dubey is a Senior Scientist in Earth System Observations at Los Alamos National Laboratory, specializing in atmospheric chemistry, aerosol–cloud–climate interactions, and greenhouse gas measurements. He has pioneered methane and black carbon monitoring networks, led international field campaigns, contributed to IPCC climate assessments, and received DOE and LANL awards for scientific excellence.
 
+
+`
+      },
+
+      // ===== Medical =====
+      {
+        name: "Prof. Nitish Badhwar",
+        role: "Panelist",
+        title: "MD, Director of Cardiac Electrophysiology Training Program",
+        org: "Stanford University School of Medicine",
+        img: "speakes&panelist/nitish bharadwaj.png",
+        track: "Medical",
+        bio: 'Prof. Nitish Badhwar, MD is an internationally recognized expert in cardiac electrophysiology, specializing in catheter ablation for complex arrhythmias and innovative hybrid procedures like the aMAZE trial. A prolific educator and recipient of the ACC Distinguished Teacher Award, he has trained physicians worldwide and advanced minimally invasive approaches to heart rhythm disorders.'
+      },
+      {
+        name: "Raj Shekhar",
+        role: "Panelist",
+        title: "Professor, Principal Investigator & Founder",
+        org: "Children's National Hospital & AusculTech Dx",
+        img: "speakes&panelist/Raj Shekhar.png",
+        track: "Medical",
+        bio: `Dr. Raj Shekhar is a biomedical engineering pioneer, serving as Principal Investigator at Children's National Hospital and a Professor of Radiology and Pediatrics at George Washington University. A serial medtech entrepreneur, he co-founded startups including IGI Technologies and AusculTech Dx, which developed the StethAid—an AI-powered, smartphone-based digital stethoscope for pediatric heart murmur detection. `
+      },
+      {
+        name: "Prof. Jaideep Srivastava",
+        role: "Panelist",
+        title: "Professor, Hubbard School of Journalism and Mass Communication",
+        org: "University of Minnesota",
+        img: "speakes&panelist/Prof. Jaideep Srivastava.png",
+        track: "Medical",
+        bio: `Prof. Jaideep Srivastava is an expert in data mining, artificial intelligence, and computational social science, with over 400 publications and multiple patents. A Fellow of the IEEE, he has led major research projects for government agencies and global corporations, and his work spans applications from social media analytics to healthcare informatics.
+`
+      },
+      {
+        name: "Prof Mark Cohen",
+        role: "Speaker",
+        title: "Professor, Orthopaedic Surgery",
+        org: "Stanford University School of Medicine",
+        img: "speakes&panelist/Prof Mark Cohen.png",
+        track: "Medical",
+        bio: `Prof. Mark S. Cohen, MD, FACS, FSSO is the Dean of the Carle Illinois College of Medicine, the world’s first engineering-based medical school. A surgical oncologist and physician-engineer, he advances research in tissue engineering, nanoparticle drug delivery, and mixed-reality medical training, while also fostering healthcare innovation and entrepreneurship.
+`
+      },
+      {
+        name: "Prof Michael Gardner",
+        role: "Speaker",
+        title: "Professor, Orthopaedic Surgery",
+        org: "Stanford University School of Medicine",
+        img: "speakes&panelist/Prof Michael Gardner.png",
+        track: "Medical",
+        bio: `Prof. Michael J. Gardner, MD is a Professor of Orthopaedic Surgery at Stanford University, where he serves as Chief of the Orthopaedic Trauma Service and Vice Chair of Clinical Operations. An authority in complex fracture management, nonunion, and malunion repair, he has published over 180 peer-reviewed papers and co-founded NSite Medical to pioneer AI-driven scoliosis diagnostics and care innovations.
+`
+      },
+      {
+        name: "Manu Prakash",
+        role: "Speaker",
+        title: "Associate Professor",
+        org: "Stanford University",
+        img: "speakes&panelist/Manu Prakash.png",
+        track: "Medical",
+        bio:`Manu Prakash, B.Tech CSE (2002, IIT Kanpur), is an Associate Professor of Bioengineering at Stanford University, renowned for creating frugal, accessible scientific tools such as the Foldscope and Paperfuge. His research spans curiosity-driven science, global health innovations, and democratizing access to scientific exploration worldwide.`
+      },
+
+      // ===== AI & Cybersecurity =====
+      {
+        name: "Mr. Ambuj Kumar",
+        role: "Panelist",
+        title: "Founder and CEO",
+        org: "Fortanix and Simbian",
+        img: "speakes&panelist/Mr.Ambuj Kumar.png",
+        track: "AI",
+        bio: `Ambuj Kumar is the Co-Founder and CEO of Simbian and Fortanix, pioneering AI agents for cybersecurity and confidential computing solutions. An IIT Kanpur gold medalist and Stanford graduate, he holds over 100 patents and has led innovations from NVIDIA GPUs to industry-defining security platforms.
+`
+      },
+      {
+        name: "Paritosh Anand",
+        role: "Panelist",
+        title: "Chief AI and Digital Officer",
+        org: "Wadhwani Foundation",
+        img: "speakes&panelist/Paritosh Anand.png",
+        track: "AI",
+        bio: `Paritosh Anand is the Chief AI & Digital Officer at the Wadhwani Foundation, where he drives AI-powered programs for India’s agriculture and digital governance sectors, fostering collaborations across government, academia, and industry. With over two decades of leadership experience at GE, Deloitte, Eaton, and Reliance, he brings deep expertise in data science, analytics, and large-scale digital transformation.
+`
+      },
+      {
+        name: "Mr. Rajesh Gupta",
+        role: "Speaker",
+        title: "Professor and Qualcomm Endowed Chair",
+        org: "University of California",
+        img: "speakes&panelist/rajesh gupta.jpeg",
+        track: "AI",
+        bio: `Rajesh K. Gupta is the Qualcomm Endowed Chair and Professor of Computer Science & Engineering at UC San Diego, known for his work in energy-efficient embedded and cyber-physical systems. An IEEE and ACM Fellow, he has authored 150+ publications and received the IEEE W. Wallace McDowell Award for his pioneering contributions to microelectronic systems design.`
+      }
+    ];
+
+    // ---------- UTIL ----------
+    const qs = (sel, el=document) => el.querySelector(sel);
+    const qsa = (sel, el=document) => [...el.querySelectorAll(sel)];
+    const trackToGridId = (t) => t === "Sustainability" ? "grid-sustainability" : (t === "Medical" ? "grid-medical" : "grid-ai");
+
+    function fallbackImg(ev) {
+      ev.target.onerror = null;
+      ev.target.src = "speakes&panelist/placeholder.png"; // add a generic placeholder file if you want
+      ev.target.alt = ev.target.alt ? ev.target.alt + " (image not available)" : "Image not available";
+    }
+
+    // ---------- CARD RENDER ----------
+    function createCard(person, index) {
+      const card = document.createElement("div");
+      card.className = "speakers-card";
+      card.setAttribute("tabindex", "0");
+      card.setAttribute("role", "group");
+      card.setAttribute("aria-label", person.name);
+
+      const img = document.createElement("img");
+      img.loading = "lazy";
+      img.src = person.img;
+      img.alt = person.name;
+      img.addEventListener("error", fallbackImg);
+
+      const body = document.createElement("div");
+      body.className = "speakers-card-body";
+
+      const h5 = document.createElement("h5");
+      h5.textContent = person.name;
+
+      const pTitle = document.createElement("p");
+      pTitle.className = "designation";
+      pTitle.textContent = person.title || "";
+
+      const pOrg = document.createElement("p");
+      pOrg.className = "organization";
+      pOrg.textContent = person.org || "";
+
+      const badge = document.createElement("span");
+      badge.className = "topic-badge";
+      badge.textContent = person.role;
+
+      const btn = document.createElement("button");
+      btn.className = "read-bio-btn";
+      btn.type = "button";
+      btn.setAttribute("data-id", index);
+      btn.textContent = "Read Bio";
+
+      // open on Enter as well
+      card.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") openBio(index);
+      });
+      btn.addEventListener("click", () => openBio(index));
+
+      body.appendChild(h5);
+      if (pTitle.textContent) body.appendChild(pTitle);
+      if (pOrg.textContent) body.appendChild(pOrg);
+      body.appendChild(badge);
+      body.appendChild(document.createElement("br"));
+      body.appendChild(btn);
+
+      card.appendChild(img);
+      card.appendChild(body);
+      return card;
+    }
+
+    // ---------- INITIAL RENDER ----------
+    function renderAll(list) {
+      // clear
+      ["grid-sustainability", "grid-medical", "grid-ai"].forEach(id => {
+        const grid = document.getElementById(id);
+        if (grid) grid.innerHTML = "";
+      });
+      // populate
+      list.forEach((p, i) => {
+        const grid = document.getElementById(trackToGridId(p.track));
+        if (grid) grid.appendChild(createCard(p, i));
+      });
+    }
+
+    // ---------- FILTERS ----------
+    function applyFilters() {
+      const trackVal = qs("#trackFilter").value;
+      const roleVal = qs("#roleFilter").value;
+      const q = qs("#searchInput").value.trim().toLowerCase();
+
+      const filtered = PEOPLE.filter(p => {
+        const trackOk = (trackVal === "all") || (p.track === trackVal);
+        const roleOk = (roleVal === "all") || (p.role === roleVal);
+        const qOk = !q || [p.name, p.title, p.org, p.role, p.track].filter(Boolean).join(" ").toLowerCase().includes(q);
+        return trackOk && roleOk && qOk;
+      });
+
+      renderAll(filtered);
+      // Scroll the selected track into view on track change (optional)
+      if (trackVal !== "all") {
+        const section = document.querySelector(`[data-track="${trackVal}"]`);
+        if (section) section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    // ---------- MODAL (accessibility-friendly) ----------
+    const bioModal = qs("#bioModal");
+    const modalContent = qs(".modal-content", bioModal);
+    const modalName = qs("#modalName");
+    const modalTitle = qs("#modalTitle");
+    const modalOrg = qs("#modalOrg");
+    const modalBio = qs("#modalBio");
+    let lastFocused = null;
+
+    function openBio(index) {
+      const p = PEOPLE[index];
+      if (!p) return;
+
+      modalName.textContent = p.name;
+      modalTitle.textContent = p.title || "";
+      modalOrg.textContent = p.org || "";
+      modalBio.textContent = p.bio || "(Bio coming soon.)";
+
+      lastFocused = document.activeElement;
+      bioModal.hidden = false;
+      document.body.style.overflow = "hidden";
+      // focus trap starts on modalContent
+      modalContent.focus();
+      document.addEventListener("keydown", handleKeydown);
+      bioModal.addEventListener("click", backdropClose);
+    }
+
+    function closeBio() {
+      bioModal.hidden = true;
+      document.body.style.overflow = "";
+      document.removeEventListener("keydown", handleKeydown);
+      bioModal.removeEventListener("click", backdropClose);
+      if (lastFocused && typeof lastFocused.focus === "function") lastFocused.focus();
+    }
+
+    function handleKeydown(e) {
+      if (e.key === "Escape") closeBio();
+      if (e.key === "Tab") trapFocus(e);
+    }
+
+    function backdropClose(e) {
+      if (e.target === bioModal) closeBio();
+    }
+
+    // Simple focus trap
+    function trapFocus(e) {
+      const focusable = qsa('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])', bioModal)
+        .filter(el => !el.hasAttribute("disabled") && !el.getAttribute("aria-hidden"));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        last.focus();
+        e.preventDefault();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        first.focus();
+        e.preventDefault();
+      }
+    }
+
+    qsa("[data-close]", bioModal).forEach(btn => btn.addEventListener("click", closeBio));
+
+    // ---------- BOOT ----------
+    window.addEventListener("DOMContentLoaded", () => {
+      renderAll(PEOPLE);
+
+      // Hook up filters
+      ["trackFilter","roleFilter","searchInput"].forEach(id => {
+        qs("#" + id).addEventListener("input", applyFilters);
+        qs("#" + id).addEventListener("change", applyFilters);
+      });
+    });
+  </script>
+
+  <!-- Optional tiny CSS patch (keep in your panelist.css if you want)
+       Colors use #3A81AD as primary -->
+  <style>
+    .filter-bar { margin-bottom: 10px; }
+    .filter-row { display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end; }
+    .filter-group { display:flex; flex-direction:column; min-width:180px; }
+    .filter-group.grow { flex:1; min-width:240px; }
+    .filter-group label { font-size:0.9rem; margin-bottom:4px; font-weight:600; color:#3A81AD; }
+    .filter-group select, .filter-group input {
+      padding:10px 12px; border:1px solid #e0e0e0; border-radius:8px; font: 400 0.95rem/1.2 Roboto, system-ui, -apple-system;
+    }
+
+    .topic-badge { background:#eaf4fa; color:#3A81AD; border-radius:999px; padding:3px 10px; font-size:0.8rem; font-weight:600; display:inline-block; }
+    .read-bio-btn { margin-top:8px; padding:8px 12px; border:0; border-radius:10px; font-weight:600; cursor:pointer; background:#3A81AD; color:#fff; }
+    .read-bio-btn:hover { filter:brightness(0.95); }
+
+    /* Modal polish */
+    .modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4); z-index:9999; }
+    .modal[hidden] { display:none !important; }
+    .modal-content { background:#fff; width:min(680px, 92vw); max-height:85vh; overflow:auto; border-radius:16px; padding:22px; outline:none; box-shadow:0 20px 60px rgba(0,0,0,0.2); }
+    .modal .close { background:transparent; border:0; font-size:28px; line-height:1; cursor:pointer; float:right; }
+    .muted { color:#6b7280; }
+  </style>
 </body>
-
 </html>
