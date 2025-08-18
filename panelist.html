@@ -3,25 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FACE 2025 – Speakers & Panelists</title>
+  <title>IITK FACE 2025 – Speakers & Panelists</title>
   <link rel="stylesheet" href="panelist.css">
   <!-- Optional: Google Fonts consistent with your preference -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="speakes&panelist/IITKLogo.png">
 
 </head>
 <body>
+  
+      
+      
 
   <!-- Back -->
   <a href="javascript:history.back()" class="back-btn" title="Go Back">←</a>
 
   <!-- Page Header -->
   <header class="container" style="padding-top:16px;">
-    <h1 class="panelist-title" style="margin-bottom:10px;">
-      <span class="highlight" style="background:#3A81AD; color:#fff; padding:4px 10px; border-radius:8px;">
-        Speakers & Panelists
+    <h1 class="panelist-title">
+      <span class="highlight">
+        SPEAKERS & PANELISTS
       </span>
     </h1>
-    <p class="muted" style="margin:6px 0 18px;">Meet the experts across our three tracks.</p>
+    
+    <p class="muted center" style="margin:6px 0 18px;">Meet our experts across the three tracks.</p>
   </header>
 
   <!-- Filter / Search Bar -->
@@ -41,8 +49,12 @@
         <label for="roleFilter">Role</label>
         <select id="roleFilter">
           <option value="all">All Roles</option>
+          <option value="Chair">Chair</option>
+          <option value="Co - Chair">Co - Chair</option>
+
           <option value="Panelist">Panelist</option>
           <option value="Speaker">Speaker</option>
+          
         </select>
       </div>
 
@@ -52,7 +64,55 @@
       </div>
     </div>
   </section>
-
+  <section id="featured-static" class="container my-4" aria-label="Featured speakers static">
+    <div class="row g-4">
+      <!-- Card A (left column) -->
+      <div class="col-12 col-md-6">
+        <article class="featured-card h-80">
+          <div class="card-image">
+            <img src="speakes&panelist/Prof. Ratnesh Kumar.png" alt="Prof. Bushra Ateeq">
+           
+          </div>
+  
+          <div class="card-body">
+            <div class="pill">CHAIR</div>
+            <h3>Prof. Ratnesh Kumar</h3>
+            <div class="role">Professor</div>
+            <div class="org">IIT Kanpur</div>
+  
+  
+            <!-- Optional: add onclick="openBio(##)" where ## is index -->
+            <a class="view-btn" href="https://iitk.ac.in/dora/profile/prof-ratnesh-kumar" target="_blank" rel="noopener noreferrer">
+                View Profile
+              </a>
+                        </div>
+        </article>
+      </div>
+  
+      <!-- Card B (right column) -->
+      
+      <div class="col-12 col-md-6">
+        <article class="featured-card h-80">
+          <div class="card-image">
+            <img src="speakes&panelist/Prof. Ashish Goel.png" alt="Prof. Sachidanand Tripathi">
+           
+          </div>
+  
+          <div class="card-body">
+            <div class="pill">CO - CHAIR</div>
+            <h3>Prof. Ashish Goel</h3>
+            <div class="role">Professor</div>
+            <div class="org">IIT Kanpur</div>
+  
+  
+            <!-- Optional: add onclick="openBio(0)" if you want to open modal -->
+            <a class="view-btn" href="https://iitk.ac.in/dora/profile/prof-ashish-goel" target="_blank" rel="noopener noreferrer"> View Profile
+            </a>
+            </div>
+        </article>
+      </div>
+    </div>
+  </section>
   <!-- Sustainability -->
   <section class="panelist-section sustainability-bg" data-track="Sustainability">
     <div class="container">
@@ -93,6 +153,24 @@
     // ---------- DATA: edit bios/titles/orgs here ----------
     const PEOPLE = [
       // ===== Sustainability =====
+      {
+        name: "Prof. Sachidanand Tripathi",
+        role: "Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Sachidanand Tripathi.png",
+        track: "Sustainability",
+        bio: `Prof. Sachidanand Tripathi, a renowned faculty at IIT Kanpur, specializes in sustainability, climate change, and atmospheric sciences. His research on air quality, aerosols, and urban sustainability emphasizes climate-resilient, environmentally responsible solutions and informs policies for cleaner air and sustainable cities.`
+      },
+      {
+        name: "Prof. Ashish Garg",
+        role: "Co - Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Ashish Garg.png",
+        track: "Sustainability",
+        bio: `National Academy of Engineering, he is known for pioneering soft-switching converters, grid-forming controls, and founding Varentec to advance smart grid innovations.`
+      },
       {
         name: "Prof. Aditi Sheshadri",
         role: "Panelist",
@@ -179,14 +257,42 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 
       // ===== Medical =====
       {
+        name: "Prof. Bushra Ateeq",
+        role: "Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Bushra Ateeq.png",
+        track: "Medical",
+        bio: 'Prof. Bushra Ateeq, Joy-Gill Chair Professor at IIT Kanpur, is a leading molecular oncologist. Her research focuses on cancer genomics, epigenetics, and therapy resistance, earning her the Shanti Swarup Bhatnagar Prize in Medical Sciences (2020).'
+      },
+      {
+        name: "Prof. Ashok Kumar",
+        role: "Co - Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Ashok Kumar.png",
+        track: "Medical",
+        bio: 'Prof. Ashok Kumar is an Endowed Chair Professor at IIT Kanpur in Biological Sciences and Bioengineering. His research explores biomaterials, cryogel technologies, and regenerative medicine, with applications spanning healthcare and environmental biotechnology.'
+      },
+      {
+        name: "Prof. Sandeep Verma",
+        role: "Co - Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Sandeep Verma.png",
+        track: "Medical",
+        bio: 'Prof. Sandeep Verma, Head of the Gangwal School of Medical Sciences and Technology (GSMST) at IIT Kanpur, is a leading researcher in chemical biology and biomedical innovation. Known for his pioneering work at the interface of chemistry and medicine, he has been instrumental in advancing interdisciplinary approaches to healthcare and technology.'
+      },
+      {
         name: "Prof. Nitish Badhwar",
         role: "Panelist",
-        title: "MD, Director of Cardiac Electrophysiology Training Program",
+        title: "Director of Cardiac Electrophysiology Training Program",
         org: "Stanford University School of Medicine",
         img: "speakes&panelist/nitish bharadwaj.png",
         track: "Medical",
         bio: 'Prof. Nitish Badhwar, MD is an internationally recognized expert in cardiac electrophysiology, specializing in catheter ablation for complex arrhythmias and innovative hybrid procedures like the aMAZE trial. A prolific educator and recipient of the ACC Distinguished Teacher Award, he has trained physicians worldwide and advanced minimally invasive approaches to heart rhythm disorders.'
       },
+    
       {
         name: "Raj Shekhar",
         role: "Panelist",
@@ -237,6 +343,26 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
       },
 
       // ===== AI & Cybersecurity =====
+      {
+        name: "Prof. Nitin Saxena",
+        role: "Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Nitin Saxena.png",
+        track: "AI",
+        bio: `Prof. Nitin Saxena is a faculty member in the Department of Computer Science and Engineering at IIT Kanpur. He is widely recognized for his work in artificial intelligence, algorithms, and computational complexity, with impactful research contributions shaping theoretical computer science and AI applications.
+`
+      },
+      {
+        name: "Prof. Indranil Saha",
+        role: "Co - Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Indranil Saha.png",
+        track: "AI",
+        bio: `Prof. Indranil Saha, faculty at IIT Kanpur, specializes in formal methods, cyber-physical systems, and robotics. He is the founding Head of the Department of Intelligent Systems, with research spanning embedded systems, multi-robot planning, and verification.
+`
+      },
       {
         name: "Mr. Ambuj Kumar",
         role: "Panelist",

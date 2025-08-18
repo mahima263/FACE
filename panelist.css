@@ -1,7 +1,9 @@
 body {
   font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
- 
+  overflow-x: hidden;   /* horizontal scroll hide */
 }
+
+
 
 /* Headings slightly bolder */
 h1, h2, h3, h4, h5, h6, .section-title {
@@ -39,15 +41,20 @@ h1, h2, h3, h4, h5, h6, .section-title {
   }
   
   .panelist-title {
-    font-size: 2rem;
+    font-size: 2.2rem;   /* bada font */
     font-weight: 700;
     text-align: center;
-    margin-bottom: 40px;
+    margin: 20px 0;   /* upar neeche margin */
+    padding: 20px 0;  /* upar neeche padding */
   }
   
   .highlight {
     color: #3A81AD;
+    padding: 8px 20px;   /* andar ki spacing */
+    border-radius: 10px;
+    font-size: 3rem;     /* highlight text bhi bada */
   }
+  
   
   .panelist-grid {
     display: grid;
@@ -307,4 +314,147 @@ h1, h2, h3, h4, h5, h6, .section-title {
 .panelist-grid > .panelist-card:only-child {
   flex: 0 1 320px;
   max-width: 320px;
+}
+/* Featured two-card layout */
+.featured-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* single featured card */
+.featured-card {
+  display: flex;
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 12px 36px rgba(20,40,60,0.08);
+  border: 1px solid rgba(11,54,78,0.03);
+  min-height: 260px;
+}
+
+/* left image column */
+.featured-card .card-image {
+  width: 40%;
+  min-width: 220px;
+  position: relative;
+  overflow: hidden;
+  background: #f8f8f8;
+}
+.featured-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* social icons overlay on image */
+.featured-card .socials {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  display:flex;
+  gap:10px;
+}
+
+
+/* right content column */
+.featured-card .card-body {
+  padding: 22px 26px;
+  flex: 1;
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* pill (role like KEYNOTE / PANEL) */
+.featured-card .pill {
+  display: inline-block;
+  padding: 6px 12px;         /* slightly smaller */
+  border-radius: 999px;
+  background: #eaf6fb;       /* very light blue */
+  color: #0E777E;            /* darker teal text for contrast */
+  font-weight: 700;
+  font-size: 0.78rem;
+  letter-spacing: 0.3px;
+}
+
+/* name + title */
+.featured-card h3 {
+  margin: 6px 0 0 0;
+  font-size: 1.35rem;
+  line-height: 1.06;
+  color: #1f2a2d;
+}
+.featured-card .role {
+  color:#3A81AD;
+  font-weight:700;
+  margin-top:6px;
+}
+.featured-card .org {
+  color:#6b7280;
+  margin-top:2px;
+}
+
+/* session line (optional) */
+.featured-card .session {
+  margin-top:10px;
+  font-weight:700;
+  color:#1f2a2d;
+}
+
+/* view profile button */
+.featured-card .view-btn {
+  margin-top: 14px;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 28px;
+  border: 0;
+  background: #ffeade;
+  color: #3A81AD;
+  font-weight:700;
+  cursor:pointer;
+  width: max-content;
+}
+/* Remove underline and keep button styling */
+.view-btn {
+  display: inline-block;        /* make it behave like a button */
+  text-decoration: none;        /* remove underline */
+  background: #ffeade;
+  color: #ff7a00;
+  padding: 12px 20px;
+  border-radius: 28px;
+  font-weight: 700;
+  border: 0;
+  cursor: pointer;
+}
+
+/* Make sure hover/focus don't re-add underline */
+.view-btn:hover,
+.view-btn:focus,
+.view-btn:active {
+  text-decoration: none;
+  filter: brightness(0.98);
+}
+
+/* Accessible focus ring (keep for keyboard users) */
+.view-btn:focus {
+  outline: 3px solid rgba(255,122,0,0.18);
+  outline-offset: 2px;
+}
+
+/* If something else keeps adding underline, force it (use sparingly) */
+.view-btn {
+  text-decoration: none !important;
+}
+
+/* responsive: stack on small screens */
+@media (max-width: 900px) {
+  .featured-grid { flex-direction: column; gap: 18px; }
+  .featured-card { flex-direction: column; min-height: auto; }
+  .featured-card .card-image { width: 100%; min-width: 0; height: 220px; }
+  .featured-card .card-body { padding: 18px; }
 }
