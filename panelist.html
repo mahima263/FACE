@@ -591,7 +591,20 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
     .modal { position:fixed; inset:0; display:flex; align-items:center; justify-content:center; background:rgba(0,0,0,0.4); z-index:9999; }
     .modal[hidden] { display:none !important; }
     .modal-content { background:#fff; width:min(680px, 92vw); max-height:85vh; overflow:auto; border-radius:16px; padding:22px; outline:none; box-shadow:0 20px 60px rgba(0,0,0,0.2); }
-    .modal .close { background:transparent; border:0; font-size:28px; line-height:1; cursor:pointer; float:right; }
+    .modal-content {
+  position: relative; /* absolute child को इसी बॉक्स के अंदर पिन करने के लिए */
+}
+
+.modal .close {
+  position: absolute;
+  top: 12px;    /* ऊपर से gap */
+  right: 12px;  /* दाईं तरफ से gap */
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
     .muted { color:#6b7280; }
   </style>
 </body>
