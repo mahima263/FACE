@@ -41,18 +41,17 @@ h1, h2, h3, h4, h5, h6, .section-title {
   }
   
   .panelist-title {
-    font-size: 2.2rem;   /* bada font */
+    font-size: 2.2rem;   
     font-weight: 700;
     text-align: center;
-    margin: 20px 0;   /* upar neeche margin */
-    padding: 20px 0;  /* upar neeche padding */
+    margin: 20px 0;  
+    padding: 20px 0;  
   }
   
   .highlight {
     color: #3A81AD;
     padding: 8px 20px;   /* andar ki spacing */
     border-radius: 10px;
-    font-size: 3rem;     /* highlight text bhi bada */
   }
   
   
