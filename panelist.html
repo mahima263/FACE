@@ -15,8 +15,48 @@
 </head>
 <body>
   
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #3a81adc1;">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="IITK_logo.png" alt="IITK Logo" style="height: 36px;" class="d-block d-sm-none" />
+  
+        <!-- Desktop Logo -->
+        <img src="IITK_logo.png" alt="IITK Logo" style="height: 50px;" class="d-none d-sm-block" />
       
       
+      
+        <!-- Vertical Line -->
+        <div style="width: 1px; height: 40px; background-color: white; margin: 0 10px;"></div>
+      
+        <!-- Text Block -->
+        <div class="lh-sm">
+          <div class="fw-bold text-white" style="font-size: 1rem;">FACE</div>
+          <small class="text-white" style="font-size: 0.75rem;">Faculty Alumni Collaborative Endeavour</small>
+        </div>
+      </a>
+      
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="panelist.html">Speakers & Panelists</a></li>
+          <li class="nav-item"><a class="nav-link" href="#agenda">Agenda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+          <li class="nav-item">
+            <a class="register-btn px-3 ms-2 text-white" href="https://survey.zohopublic.in/zs/HED3qX" target="_blank">
+              Register Now
+            </a>
+          </li>
+          
+          
+                </ul>
+      </div>
+    </div>
+    </nav>
 
  
   
@@ -65,6 +105,8 @@
     </div>
   </section>
   <section id="featured-static" class="container my-4" aria-label="Featured speakers static">
+    <h2 class="panelist-title"><span class="highlight green">FACE Symposium</span></h2>
+
     <div class="row g-4">
       <!-- Card A (left column) -->
       <div class="col-12 col-md-6">
@@ -233,7 +275,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 
       },
       {
-        name: "Dr. Rajendra Bhattarai",
+        name: "Mr. Rajendra Bhattarai",
         role: "Speaker",
         title: "President, Clean Water Strategies",
         org: "Austin, Texas",
@@ -274,15 +316,15 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         track: "Medical",
         bio: 'Prof. Ashok Kumar is an Endowed Chair Professor at IIT Kanpur in Biological Sciences and Bioengineering. His research explores biomaterials, cryogel technologies, and regenerative medicine, with applications spanning healthcare and environmental biotechnology.'
       },
-      // {
-      //   name: "Prof. Sandeep Verma",
-      //   role: "Host",
-      //   title: "Professor",
-      //   org: "IIT Kanpur",
-      //   img: "speakes&panelist/Prof. Sandeep Verma.png",
-      //   track: "Medical",
-      //   bio: 'Prof. Sandeep Verma, Head of the Gangwal School of Medical Sciences and Technology (GSMST) at IIT Kanpur, is a leading researcher in chemical biology and biomedical innovation. Known for his pioneering work at the interface of chemistry and medicine, he has been instrumental in advancing interdisciplinary approaches to healthcare and technology.'
-      // },
+      {
+        name: "Prof. Sandeep Verma",
+        role: "Host",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Sandeep Verma.png",
+        track: "Medical",
+        bio: 'Prof. Sandeep Verma, Head of the Gangwal School of Medical Sciences and Technology (GSMST) at IIT Kanpur, is a leading researcher in chemical biology and biomedical innovation. Known for his pioneering work at the interface of chemistry and medicine, he has been instrumental in advancing interdisciplinary approaches to healthcare and technology.'
+      },
       {
         name: "Prof. Nitish Badhwar",
         role: "Panelist",
@@ -294,7 +336,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
       },
     
       {
-        name: "Raj Shekhar",
+        name: "Prof. Raj Shekhar",
         role: "Panelist",
         title: "Professor, Principal Investigator & Founder",
         org: "Children's National Hospital & AusculTech Dx",
@@ -313,7 +355,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 `
       },
       {
-        name: "Prof Mark Cohen",
+        name: "Prof. Mark Cohen",
         role: "Speaker",
         title: "Professor, Orthopaedic Surgery",
         org: "Stanford University of Medicine",
@@ -323,7 +365,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 `
       },
       {
-        name: "Prof Michael Gardner",
+        name: "Prof. Michael Gardner",
         role: "Speaker",
         title: "Professor, Orthopaedic Surgery",
         org: "Stanford University of Medicine",
@@ -333,7 +375,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 `
       },
       {
-        name: "Manu Prakash",
+        name: "Prof. Manu Prakash",
         role: "Speaker",
         title: "Associate Professor",
         org: "Stanford University",
@@ -374,7 +416,17 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 `
       },
       {
-        name: "Paritosh Anand",
+        name: "Prof. C Seshadri",
+        role: "Panelist",
+        title: "Professor",
+        org: "University of California, Santa Cruz",
+        img: "speakes&panelist/C Seshadri.png",
+        track: "AI",
+        bio: `C. Seshadhri is a Professor of Computer Science and Engineering at UC Santa Cruz, specializing in graph algorithms, randomized methods, and large-scale data analysis. An alumnus of IIT Kanpur and Princeton, his award-winning research bridges theoretical computer science and data mining.
+`
+      },
+      {
+        name: "Mr. Paritosh Anand",
         role: "Panelist",
         title: "Chief AI and Digital Officer",
         org: "Wadhwani Foundation",
@@ -384,7 +436,16 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
 `
       },
       {
-        name: "Mr. Rajesh Gupta",
+        name: "Prof. Sanjit Seshia",
+        role: "Speaker",
+        title: "Professor in the Department of Electrical Engineering and Computer Sciences",
+        org: "University of California, Berkeley",
+        img: "speakes&panelist/Sanjit Seshia.png",
+        track: "AI",
+        bio: `Sanjit A. Seshia is the Cadence Founders Chair Professor of Electrical Engineering and Computer Sciences at UC Berkeley. An IIT Bombay graduate with a Ph.D. from Carnegie Mellon, he is a leading researcher in formal methods, with influential contributions to verification, synthesis, and their applications in AI, security, and cyber-physical systems.`
+      },
+      {
+        name: "Prof. Rajesh Gupta",
         role: "Speaker",
         title: "Professor and Qualcomm Endowed Chair",
         org: "University of California",
@@ -441,7 +502,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
       btn.className = "read-bio-btn";
       btn.type = "button";
       btn.setAttribute("data-id", index);
-      btn.textContent = "Read Bio";
+      btn.textContent = "Read More";
 
       // open on Enter as well
       card.addEventListener("keydown", (e) => {
@@ -569,6 +630,24 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         qs("#" + id).addEventListener("change", applyFilters);
       });
     });
+    
+  document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navMenu');
+
+    navLinks.forEach(function (link) {
+      link.addEventListener('click', function () {
+        const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      });
+    });
+  });
+ 
+
+
+
   </script>
 
   
@@ -579,7 +658,7 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
     .filter-group.grow { flex:1; min-width:240px; }
     .filter-group label { font-size:0.9rem; margin-bottom:4px; font-weight:600; color:#3A81AD; }
     .filter-group select, .filter-group input {
-      padding:10px 12px; border:1px solid #e0e0e0; border-radius:8px; font: 400 0.95rem/1.2 Roboto, system-ui, -apple-system;
+      padding:10px 12px; border:1px solid #e0e0e0; border-radius:8px; font: 400 0.95rem/1.2 Nunito, system-ui, -apple-system;
     }
 
     .topic-badge { background:#eaf4fa; color:#3A81AD; border-radius:999px; padding:3px 10px; font-size:0.8rem; font-weight:600; display:inline-block; }

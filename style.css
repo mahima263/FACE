@@ -27,6 +27,8 @@ h1, h2, h3, h4, h5, h6, .section-title {
   .navbar-nav .nav-link {
     color: #ffffff !important;
     font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+
     font-size: 1.05rem;
   }
   
@@ -36,11 +38,13 @@ h1, h2, h3, h4, h5, h6, .section-title {
   
   .navbar-nav .nav-link.btn {
     font-weight: 600;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.05rem;
   }
   .register-btn {
     background-color: #B04B3B;
     font-weight: 600;
+    font-family: 'Nunito', sans-serif;
     font-size: 1.05rem;
     padding: 0.5rem 1rem;
     border-radius: 6px;

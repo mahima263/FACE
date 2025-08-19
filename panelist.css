@@ -1,6 +1,7 @@
 body {
   font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;   /* horizontal scroll hide */
+  padding-top: 50px;
 }
 
 
@@ -10,7 +11,91 @@ h1, h2, h3, h4, h5, h6, .section-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
 }
- 
+.navbar-nav .nav-link {
+  font-family: 'Nunito', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  color: #ffffff !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #dddddd !important;
+}
+
+.navbar-nav .nav-link.btn {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+.register-btn {
+  background-color: #B04B3B;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.register-btn:hover {
+  background-color: #922f27;
+  transform: scale(1.05);
+  color: #fff;
+}
+
+/* Shine effect */
+.register-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.6), rgba(255,255,255,0.2));
+  transform: skewX(-20deg);
+}
+
+.register-btn:hover::after {
+  animation: shine 1s ease;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+
+/* Shine Effect */
+.register-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0.3) 100%);
+  transform: skewX(-20deg);
+}
+
+.register-btn:hover::after {
+  animation: shine 1s forwards;
+}
+
+@keyframes shine {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
   .back-btn {
     position: fixed;
     top: 20px;
