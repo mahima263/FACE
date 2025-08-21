@@ -542,3 +542,11 @@ h1, h2, h3, h4, h5, h6, .section-title {
   .featured-card .card-image { width: 100%; min-width: 0; height: 220px; }
   .featured-card .card-body { padding: 18px; }
 }
+.co-chair-badge {
+  display: inline-block;   /* sirf text ki width lega */
+  background-color: #3A81AD; /* aapka main color */
+  color: #fff;             /* text white */
+  padding: 2px 8px;        /* thoda spacing */
+  border-radius: 4px;      /* halka rounded corner */
+  font-size: 14px;         /* readable size */
+}

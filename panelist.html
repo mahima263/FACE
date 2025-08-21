@@ -105,80 +105,93 @@
       </div>
     </div>
   </section>
-  <section id="featured-static" class="container my-4" aria-label="Featured speakers static">
-    <h2 class="panelist-title"><span class="highlight green">FACE Symposium</span></h2>
+  <section id="featured-static" class="container my-5" aria-label="Featured speakers static">
+    <h2 class="text-center mb-5 panelist-title">
+      <span class="highlight green">FACE Symposium</span>
+    </h2>
+  
+    <div class="row g-4 justify-content-center">
+      <!-- Card A -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <article class="card h-100 text-center shadow border-0 rounded-4 overflow-hidden">
+          <img src="speakes&panelist/ratnesh.jpeg" 
+               class="card-img-top img-fluid" 
+               alt="Prof. Ratnesh Kumar">
+  
+          <div class="card-body p-4">
+            <h3 class="card-title fw-bold mb-2">Prof. Ratnesh Kumar</h3>
+            <p class="role text-muted mb-1">Professor</p>
+            <p class="org fw-medium text-secondary mb-1">Iowa State University</p>
+  
+            <p class="org fw-semibold text-secondary mb-2 ">Co - Chair</p>
 
-    <div class="row g-4">
-      <!-- Card A (left column) -->
-      <div class="col-12 col-md-6">
-        <article class="featured-card h-80">
-          <div class="card-image">
-            <img src="speakes&panelist/Prof. Ratnesh Kumar.png" alt="Prof. Bushra Ateeq">
-           
+  
+            <!-- Button -->
+            <a class="btn px-4 rounded-pill" 
+               style="background-color:#3A81AD; color:#fff; border:none;" 
+               href="https://iitk.ac.in/dora/profile/prof-ratnesh-kumar" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              View Profile
+            </a>
           </div>
-  
-          <div class="card-body">
-            <div class="pill">CO - CHAIR</div>
-            <h3>Prof. Ratnesh Kumar</h3>
-            <div class="role">Professor</div>
-            <div class="org">IIT Kanpur</div>
-  
-  
-            <!-- Optional: add onclick="openBio(##)" where ## is index -->
-            <a class="view-btn" href="https://iitk.ac.in/dora/profile/prof-ratnesh-kumar" target="_blank" rel="noopener noreferrer">
-                View Profile
-              </a>
-                        </div>
         </article>
       </div>
   
-      <!-- Card B (right column) -->
-      
-      <div class="col-12 col-md-6">
-        <article class="featured-card h-80">
-          <div class="card-image">
-            <img src="speakes&panelist/Prof. Ashish Goel.png" alt="Prof. Sachidanand Tripathi">
-           
-          </div>
+      <!-- Card B -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <article class="card h-100 text-center shadow border-0 rounded-4 overflow-hidden">
+          <img src="speakes&panelist/Ashish.jpeg" 
+               class="card-img-top img-fluid" 
+               alt="Prof. Ashish Goel">
   
-          <div class="card-body">
-            <div class="pill">CO - CHAIR</div>
-            <h3>Prof. Ashish Goel</h3>
-            <div class="role">Professor</div>
-            <div class="org">IIT Kanpur</div>
+          <div class="card-body p-4">
+            <h3 class="card-title fw-bold mb-2">Prof. Ashish Goel</h3>
+            <p class="role text-muted mb-1">Professor</p>
+            <p class="org fw-medium text-secondary mb-1">Stanford University</p>
+            <p class="org fw-semibold text-secondary mb-2 ">Co - Chair</p>
+
+            
   
-  
-            <!-- Optional: add onclick="openBio(0)" if you want to open modal -->
-            <a class="view-btn" href="https://iitk.ac.in/dora/profile/prof-ashish-goel" target="_blank" rel="noopener noreferrer"> View Profile
+            <!-- Button -->
+            <a class="btn px-4 rounded-pill" 
+               style="background-color:#3A81AD; color:#fff; border:none;" 
+               href="https://iitk.ac.in/dora/profile/prof-ashish-goel" 
+               target="_blank" 
+               rel="noopener noreferrer">
+              View Profile
             </a>
-            </div>
+          </div>
         </article>
       </div>
     </div>
   </section>
- 
+  
+  
+  
 
   <!-- Medical -->
   <section class="panelist-section medical-bg" data-track="Medical">
     <div class="container">
-      <h2 class="panelist-title"><span class="highlight pink">Track : Medical Devices, Diagnostics & Therapeutics
+      <h2 class="panelist-title"><span class="highlight pink">Track : Innovations in Medical Devices, Diagnostics & Therapeutics
       </span></h2>
       <div class="speakers-card-grid" id="grid-medical" aria-live="polite"></div>
     </div>
   </section>
 
-  <!-- AI & Cybersecurity -->
-  <section class="panelist-section ai-bg" data-track="AI">
-    <div class="container">
-      <h2 class="panelist-title"><span class="highlight blue">Track : AI & Cybersecurity</span></h2>
-      <div class="speakers-card-grid" id="grid-ai" aria-live="polite"></div>
-    </div>
-  </section>
+ 
  <!-- Sustainability -->
  <section class="panelist-section sustainability-bg" data-track="Sustainability">
   <div class="container">
     <h2 class="panelist-title"><span class="highlight green">Track : Sustainability</span></h2>
     <div class="speakers-card-grid" id="grid-sustainability" aria-live="polite"></div>
+  </div>
+</section>
+ <!-- AI & Cybersecurity -->
+ <section class="panelist-section ai-bg" data-track="AI">
+  <div class="container">
+    <h2 class="panelist-title"><span class="highlight blue">Track : AI & Cybersecurity</span></h2>
+    <div class="speakers-card-grid" id="grid-ai" aria-live="polite"></div>
   </div>
 </section>
   <!-- Accessible Modal (reusable) -->
@@ -198,7 +211,24 @@
   <script>
     // ---------- DATA: edit bios/titles/orgs here ----------
     const PEOPLE = [
-      
+      // ===== Chair and Co-Chair =====
+      // {
+      //   name: "Prof. Ratnesh Kumar",
+      //   role: "Co - Chair",
+      //   title: "Professor",
+      //   org: "Iowa State University",
+      //   img: "speakes&panelist/Prof. Ratnesh Kumar.png",
+      //   bio: "Prof. Ashish Goel serves as a Professor at Stanford University. His expertise lies in algorithms, optimization, and computational techniques, which he has applied to diverse problems across science and engineering. With an active record of publications and collaborative research, Prof. Goel has contributed to both theoretical advancements and real-world applications. Beyond research, he is deeply engaged in mentoring students and leading interdisciplinary initiatives, reflecting his commitment to innovation and academic leadership."
+
+      // },
+      // {
+      //   name: "Prof. Ashish Goel",
+      //   role: "Co - Chair",
+      //   title: "Professor",
+      //   org: "Stanford University",
+      //   img: "speakes&panelist/Prof. Ashish Goel.png",
+      //   bio: 'Prof. Bushra Ateeq, Joy-Gill Chair Professor at IIT Kanpur, is a leading molecular oncologist. Her research focuses on cancer genomics, epigenetics, and therapy resistance, earning her the Shanti Swarup Bhatnagar Prize in Medical Sciences (2020).'
+      // },
       // ===== Medical =====
       {
         name: "Prof. Sandeep Verma",
@@ -232,8 +262,8 @@
       {
         name: "Prof. Mark Cohen",
         role: "Speaker",
-        title: "Professor, Orthopaedic Surgery",
-        org: "Stanford University of Medicine",
+        title: "Dean",
+        org: "UIUC Medical School",
         img: "speakes&panelist/Prof Mark Cohen.png",
         track: "Medical",
         bio: `Prof. Mark S. Cohen, MD, FACS, FSSO is the Dean of the Carle Illinois College of Medicine, the world’s first engineering-based medical school. A surgical oncologist and physician-engineer, he advances research in tissue engineering, nanoparticle drug delivery, and mixed-reality medical training, while also fostering healthcare innovation and entrepreneurship.
@@ -243,7 +273,7 @@
         name: "Prof. Michael Gardner",
         role: "Speaker",
         title: "Professor, Orthopaedic Surgery",
-        org: "Stanford University of Medicine",
+        org: "Stanford University School of Medicine ",
         img: "speakes&panelist/Prof Michael Gardner.png",
         track: "Medical",
         bio: `Prof. Michael J. Gardner, MD is a Professor of Orthopaedic Surgery at Stanford University, where he serves as Chief of the Orthopaedic Trauma Service and Vice Chair of Clinical Operations. An authority in complex fracture management, nonunion, and malunion repair, he has published over 180 peer-reviewed papers and co-founded NSite Medical to pioneer AI-driven scoliosis diagnostics and care innovations.
@@ -262,7 +292,7 @@
         name: "Prof. Nitish Badhwar",
         role: "Panelist",
         title: "Director of Cardiac Electrophysiology Training Program",
-        org: "Stanford University of Medicine",
+        org: "Stanford University School of Medicine ",
         img: "speakes&panelist/nitish bharadwaj.png",
         track: "Medical",
         bio: 'Prof. Nitish Badhwar, MD is an internationally recognized expert in cardiac electrophysiology, specializing in catheter ablation for complex arrhythmias and innovative hybrid procedures like the aMAZE trial. A prolific educator and recipient of the ACC Distinguished Teacher Award, he has trained physicians worldwide and advanced minimally invasive approaches to heart rhythm disorders.'
@@ -288,125 +318,35 @@
 `
       },
       {
-        name: "Mihikaa Jain",
+        name: "Ms. Mihikaa Jain",
         role: "Panelist",
-        title: "A business development associate ",
+        title: "Business Development Associate ",
         org: "San Francisco Bay Area",
         img: "speakes&panelist/mahika.jpeg",
         track: "Medical",
         bio: `Based in the San Francisco Bay Area, Mihikaa Jain is a Business Development Associate focused on partnerships and growth strategy. She brings a strong interest in the tech and startup ecosystem, connecting people and ideas to drive opportunities.`
       },
-      // ===== AI & Cybersecurity =====
-      {
-        name: "Prof. Nitin Saxena",
-        role: "Chair",
-        title: "Professor",
-        org: "IIT Kanpur",
-        img: "speakes&panelist/Prof. Nitin Saxena.png",
-        track: "AI",
-        bio: `Prof. Nitin Saxena is a faculty member in the Department of Computer Science and Engineering at IIT Kanpur. He is widely recognized for his work in artificial intelligence, algorithms, and computational complexity, with impactful research contributions shaping theoretical computer science and AI applications.
-`
-      },
-      {
-        name: "Prof. Indranil Saha",
-        role: "Co - Chair",
-        title: "Professor",
-        org: "IIT Kanpur",
-        img: "speakes&panelist/indranil saha.png",
-        track: "AI",
-        bio: `Prof. Indranil Saha, faculty at IIT Kanpur, specializes in formal methods, cyber-physical systems, and robotics. He is the founding Head of the Department of Intelligent Systems, with research spanning embedded systems, multi-robot planning, and verification.
-`
-      },
       
-      {
-        name: "Prof. Sanjit Seshia",
-        role: "Speaker",
-        title: "Professor in the Department of Electrical Engineering and Computer Sciences",
-        org: "University of California, Berkeley",
-        img: "speakes&panelist/Sanjit Seshia.png",
-        track: "AI",
-        bio: `Sanjit A. Seshia is the Cadence Founders Chair Professor of Electrical Engineering and Computer Sciences at UC Berkeley. An IIT Bombay graduate with a Ph.D. from Carnegie Mellon, he is a leading researcher in formal methods, with influential contributions to verification, synthesis, and their applications in AI, security, and cyber-physical systems.`
-      },
-      {
-        name: "Prof. Rajesh Gupta",
-        role: "Speaker",
-        title: "Professor and Qualcomm Endowed Chair",
-        org: "University of California",
-        img: "speakes&panelist/rajesh gupta.jpeg",
-        track: "AI",
-        bio: `Rajesh K. Gupta is the Qualcomm Endowed Chair and Professor of Computer Science & Engineering at UC San Diego, known for his work in energy-efficient embedded and cyber-physical systems. An IEEE and ACM Fellow, he has authored 150+ publications and received the IEEE W. Wallace McDowell Award for his pioneering contributions to microelectronic systems design.`
-      },
-      {
-        name: "Prof. Somitra Sanadhya",
-        role: "Panelist",
-        title: "Professor ",
-        org: "Wadhwani School of AI and Intelligent Systems",
-        img: "speakes&panelist/Prof. Somitra Sanadhya.png",
-        track: "AI",
-        bio: `Professor at the Wadhwani School of AI and Intelligent Systems, Prof. Sanadhya works at the crossroads of AI, cybersecurity, and intelligent computing. He is passionate about applying AI to real-world challenges and mentoring the next generation of researchers.
-
-`
-      },
-      {
-        name: "Prof. Ketan Rajawat",
-        role: "Panelist",
-        title: "Professor ",
-        org: "IIT Kanpur",
-        img: "speakes&panelist/Prof. Ketan Rajawat.png",
-        track: "AI",
-        bio: `A faculty member in Electrical Engineering at IIT Kanpur, Prof. Rajawat’s work spans signal processing, wireless communication, and machine learning. He is widely recognized for bridging theory with practical applications in modern networks.
-
-
-`
-      },
-      {
-        name: "Mr. Ambuj Kumar",
-        role: "Panelist",
-        title: "Founder and CEO",
-        org: "Fortanix and Simbian",
-        img: "speakes&panelist/Mr.Ambuj Kumar.png",
-        track: "AI",
-        bio: `Ambuj Kumar is the Co-Founder and CEO of Simbian and Fortanix, pioneering AI agents for cybersecurity and confidential computing solutions. An IIT Kanpur gold medalist and Stanford graduate, he holds over 100 patents and has led innovations from NVIDIA GPUs to industry-defining security platforms.
-`
-      },
-      {
-        name: "Prof. C Seshadri",
-        role: "Panelist",
-        title: "Professor",
-        org: "University of California, Santa Cruz",
-        img: "speakes&panelist/C Seshadri.png",
-        track: "AI",
-        bio: `C. Seshadhri is a Professor of Computer Science and Engineering at UC Santa Cruz, specializing in graph algorithms, randomized methods, and large-scale data analysis. An alumnus of IIT Kanpur and Princeton, his award-winning research bridges theoretical computer science and data mining.
-`
-      },
-      {
-        name: "Mr. Paritosh Anand",
-        role: "Panelist",
-        title: "Chief AI and Digital Officer",
-        org: "Wadhwani Foundation",
-        img: "speakes&panelist/Paritosh Anand.png",
-        track: "AI",
-        bio: `Paritosh Anand is the Chief AI & Digital Officer at the Wadhwani Foundation, where he drives AI-powered programs for India’s agriculture and digital governance sectors, fostering collaborations across government, academia, and industry. With over two decades of leadership experience at GE, Deloitte, Eaton, and Reliance, he brings deep expertise in data science, analytics, and large-scale digital transformation.
-`
-      },
       // ===== Sustainability =====
       {
         name: "Prof. Sachidanand Tripathi",
         role: "Chair",
-        title: "Professor",
+        title: "Dean of Kotak School of Sustainability",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Sachidanand Tripathi.png",
         track: "Sustainability",
-        bio: `Prof. Sachidanand Tripathi, a renowned faculty at IIT Kanpur, specializes in sustainability, climate change, and atmospheric sciences. His research on air quality, aerosols, and urban sustainability emphasizes climate-resilient, environmentally responsible solutions and informs policies for cleaner air and sustainable cities.`
+        bio: `Prof. Sachidanand Tripathi, a renowned faculty and Dean of Kotak School of Sustainability at IIT Kanpur, specializes in sustainability, climate change, and atmospheric sciences. His research on air quality, aerosols, and urban sustainability emphasizes climate-resilient, environmentally responsible solutions, informing policies for cleaner air and sustainable cities.
+`
       },
       {
         name: "Prof. Ashish Garg",
         role: "Co - Chair",
-        title: "Professor",
+        title: "Head of Dept of Sustainable Energy Engineering",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Ashish Garg.png",
         track: "Sustainability",
-        bio: `National Academy of Engineering, he is known for pioneering soft-switching converters, grid-forming controls, and founding Varentec to advance smart grid innovations.`
+        bio: `At the Kotak School of Sustainability and Kesavan Center, IIT Kanpur, Prof. Ashish Garg advances research in materials science and engineering. His interests include functional materials for energy storage, nanotechnology, and sustainable innovations for next-generation technologies.
+`
       },
      
       {
@@ -419,9 +359,9 @@
         bio: "Dr. Nitash P. Balsara is the Charles W. Tobias Professor in Electrochemistry at UC Berkeley and a Faculty Senior Scientist at Lawrence Berkeley National Laboratory. His research focuses on nanostructured polymer electrolytes for next-generation batteries."
       },
       {
-        name: "Dr. Deepak Divan",
+        name: "Dr. Deepakraj M Divan",
         role: "Speaker",
-        title: "Professor, Electrical & Computer Engineering",
+        title: "Director, Georgia Tech Center for Distributed Energy",
         org: "Georgia Institute of Technology, Atlanta",
         img: "speakes&panelist/Dr.Deepak Divan.png",
         track: "Sustainability",
@@ -490,6 +430,101 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         img: "speakes&panelist/Dr. Deepjyoti Deka.png",
         track: "Sustainability",
         bio: `Dr. Deepjyoti Deka is a Research Scientist at the MIT Energy Initiative, where he develops AI-driven optimization and sensing methods to enable secure, renewable-rich power grids. Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive experience applying data science and physics-informed machine learning to energy and cyber-physical systems, and is a senior IEEE member. 
+`
+      },
+      // ===== AI & Cybersecurity =====
+      {
+        name: "Prof. Nitin Saxena",
+        role: "Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Nitin Saxena.png",
+        track: "AI",
+        bio: `Prof. Nitin Saxena is a faculty member in the Department of Computer Science and Engineering at IIT Kanpur. He is widely recognized for his work in artificial intelligence, algorithms, and computational complexity, with impactful research contributions shaping theoretical computer science and AI applications.
+`
+      },
+      {
+        name: "Prof. Indranil Saha",
+        role: "Co - Chair",
+        title: "Professor",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/indranil saha.png",
+        track: "AI",
+        bio: `Prof. Indranil Saha, faculty at IIT Kanpur, specializes in formal methods, cyber-physical systems, and robotics. He is the founding Head of the Department of Intelligent Systems, with research spanning embedded systems, multi-robot planning, and verification.
+`
+      },
+      
+      {
+        name: "Prof. Sanjit Seshia",
+        role: "Speaker",
+        title: "Professor in the Department of Electrical Engineering and Computer Sciences",
+        org: "University of California, Berkeley",
+        img: "speakes&panelist/Sanjit Seshia.png",
+        track: "AI",
+        bio: `Sanjit A. Seshia is the Cadence Founders Chair Professor of Electrical Engineering and Computer Sciences at UC Berkeley. An IIT Bombay graduate with a Ph.D. from Carnegie Mellon, he is a leading researcher in formal methods, with influential contributions to verification, synthesis, and their applications in AI, security, and cyber-physical systems.`
+      },
+      {
+        name: "Prof. Rajesh Gupta",
+        role: "Speaker",
+        title: "Dean of School of Computing, Information and Data Science",
+        org: "University of California",
+        img: "speakes&panelist/rajesh gupta.jpeg",
+        track: "AI",
+        bio: `Rajesh K. Gupta is Dean of the School of Computing, Information and Data Science at UC San Diego.He served as the founding director of the Halicioglu Data Science Institute (HDSI) and Chair of the Computer Science and Engineering department, where he is currently a distinguished Professor. An IEEE and ACM Fellow, he has authored 150+ publications and received the IEEE W. Wallace McDowell Award for his pioneering contributions to microelectronic systems design.`
+      },
+      {
+        name: "Prof. Somitra Sanadhya",
+        role: "Panelist",
+        title: "Professor ",
+        org: "Wadhwani School of AI and Intelligent Systems",
+        img: "speakes&panelist/Prof. Somitra Sanadhya.png",
+        track: "AI",
+        bio: `Professor at the Wadhwani School of AI and Intelligent Systems, Prof. Sanadhya works at the crossroads of AI, cybersecurity, and intelligent computing. He is passionate about applying AI to real-world challenges and mentoring the next generation of researchers.
+
+`
+      },
+      {
+        name: "Prof. Ketan Rajawat",
+        role: "Panelist",
+        title: "Associate Professor ",
+        org: "IIT Kanpur",
+        img: "speakes&panelist/Prof. Ketan Rajawat.png",
+        track: "AI",
+        bio: `A faculty member in Electrical Engineering at IIT Kanpur, Prof. Rajawat’s work spans signal processing, wireless communication, and machine learning. He is widely recognized for bridging theory with practical applications in modern networks.
+
+
+`
+      },
+      {
+        name: "Mr. Ambuj Kumar",
+        role: "Panelist",
+        title: "Founder and CEO",
+        org: "Fortanix and Simbian",
+        img: "speakes&panelist/Mr.Ambuj Kumar.png",
+        track: "AI",
+        bio: `Mr. Ambuj Kumar is the Co-Founder and CEO of Simbian and Fortanix, pioneering AI agents for cybersecurity and confidential computing solutions. An IIT Kanpur gold medalist and Stanford graduate, he holds over 100 patents and has led innovations from NVIDIA GPUs to industry-defining security platforms.
+`
+      },
+      {
+        name: "Prof. C Seshadri",
+        role: "Panelist",
+        title: "Professor",
+        org: "University of California, Santa Cruz",
+        img: "speakes&panelist/C Seshadri.png",
+        track: "AI",
+        bio: `Prof. C. Seshadhri is a Professor of Computer Science at UC Santa Cruz, specializing in graph algorithms, randomized methods, and large-scale data analysis. An alumnus of IIT Kanpur and Princeton, his award-winning research bridges theoretical computer science and data mining.
+
+
+`
+      },
+      {
+        name: "Mr. Paritosh Anand",
+        role: "Panelist",
+        title: "Chief AI and Digital Officer",
+        org: "Wadhwani Foundation",
+        img: "speakes&panelist/Paritosh Anand.png",
+        track: "AI",
+        bio: `Mr. Paritosh Anand is the Chief AI & Digital Officer at the Wadhwani Foundation, where he drives AI-powered programs for India’s agriculture and digital governance sectors, fostering collaborations across government, academia, and industry. With over two decades of leadership experience at GE, Deloitte, Eaton, and Reliance, he brings deep expertise in data science, analytics, and large-scale digital transformation.
 `
       },
 
