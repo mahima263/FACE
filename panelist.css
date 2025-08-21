@@ -550,3 +550,14 @@ h1, h2, h3, h4, h5, h6, .section-title {
   border-radius: 4px;      /* halka rounded corner */
   font-size: 14px;         /* readable size */
 }
+.lh-sm {
+  font-family: 'Nunito', sans-serif;
+}
+
+.lh-sm .fw-bold {
+  font-size: 1.1rem;
+}
+
+.lh-sm small {
+  font-size: 0.7rem;
+}

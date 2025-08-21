@@ -111,7 +111,17 @@ h1, h2, h3, h4, h5, h6, .section-title {
       left: 125%;
     }
   }
-  
+  .lh-sm {
+    font-family: 'Nunito', sans-serif;
+  }
+
+  .lh-sm .fw-bold {
+    font-size: 1.1rem;
+  }
+
+  .lh-sm small {
+    font-size: 0.7rem;
+  }
   .banner-section img {
     padding-top: 70px;
     max-height: 100%;
