@@ -63,52 +63,15 @@
 
 
   <!-- Page Header -->
-  <header class="container" style="padding-top:16px;">
-    <h1 class="panelist-title">
-      <span class="highlight">
-        SPEAKERS & PANELISTS
-      </span>
-    </h1>
+ 
 
-    <p class="muted center" style="margin:6px 0 18px;">Meet our experts across the three tracks.</p>
   </header>
 
   <!-- Filter / Search Bar -->
-  <section class="container filter-bar" aria-label="Filter speakers and panelists">
-    <div class="filter-row">
-      <div class="filter-group">
-        <label for="trackFilter">Track</label>
-        <select id="trackFilter">
-          <option value="all">All Tracks</option>
-          <option value="Sustainability">Sustainability</option>
-          <option value="Medical">Innovations in Medical Devices, Diagnostics & Therapeutics
-          </option>
-          <option value="AI">AI & Cybersecurity</option>
-        </select>
-      </div>
-
-      <div class="filter-group">
-        <label for="roleFilter">Role</label>
-        <select id="roleFilter">
-          <option value="all">All Roles</option>
-          <option value="Chair">Chair</option>
-          <option value="Co - Chair">Co - Chair</option>
-
-          <option value="Panelist">Panelist</option>
-          <option value="Speaker">Speaker</option>
-
-        </select>
-      </div>
-
-      <div class="filter-group grow">
-        <label for="searchInput">Search</label>
-        <input id="searchInput" type="search" placeholder="Search by name, title, organization…" />
-      </div>
-    </div>
-  </section>
+  
   <section id="featured-static" class="container my-5" aria-label="Featured speakers static">
     <h2 class="text-center mb-5 panelist-title">
-      <span class="highlight green">FACE Symposium</span>
+      <span class="highlight green"> CONFERENCE CO - CHAIRS</span>
     </h2>
 
     <div class="row g-4 justify-content-center">
@@ -119,7 +82,7 @@
 
           <div class="card-body p-4">
             <h3 class="card-title fw-bold mb-2">Prof. Ratnesh Kumar</h3>
-            <p class="role text-muted mb-1">Professor</p>
+            <p class="role text-muted mb-1">Professor of Management Science and Engineering and (by courtesy) Computer Science </p>
             <p class="org fw-medium text-secondary mb-1">Iowa State University</p>
 
             <p class="org fw-semibold text-secondary mb-2 ">Co - Chair</p>
@@ -141,7 +104,7 @@
 
           <div class="card-body p-4">
             <h3 class="card-title fw-bold mb-2">Prof. Ashish Goel</h3>
-            <p class="role text-muted mb-1">Professor</p>
+            <p class="role text-muted mb-1">Barbara and James R. Palmer Professor, Professor Dept of Electrical & Computer Engineering </p>
             <p class="org fw-medium text-secondary mb-1">Stanford University</p>
             <p class="org fw-semibold text-secondary mb-2 ">Co - Chair</p>
 
@@ -159,7 +122,9 @@
   </section>
 
 
-
+  <h2 class="text-center mb-5 panelist-title">
+    <span class="highlight green"> SPEAKERS & PANELISTS</span>
+  </h2>
 
   <!-- Medical -->
   <section class="panelist-section medical-bg" data-track="Medical">
@@ -204,82 +169,68 @@
   <script>
     // ---------- DATA: edit bios/titles/orgs here ----------
     const PEOPLE = [
-      // ===== Chair and Co-Chair =====
-      // {
-      //   name: "Prof. Ratnesh Kumar",
-      //   role: "Co - Chair",
-      //   title: "Professor",
-      //   org: "Iowa State University",
-      //   img: "speakes&panelist/Prof. Ratnesh Kumar.png",
-      //   bio: "Prof. Ashish Goel serves as a Professor at Stanford University. His expertise lies in algorithms, optimization, and computational techniques, which he has applied to diverse problems across science and engineering. With an active record of publications and collaborative research, Prof. Goel has contributed to both theoretical advancements and real-world applications. Beyond research, he is deeply engaged in mentoring students and leading interdisciplinary initiatives, reflecting his commitment to innovation and academic leadership."
-
-      // },
-      // {
-      //   name: "Prof. Ashish Goel",
-      //   role: "Co - Chair",
-      //   title: "Professor",
-      //   org: "Stanford University",
-      //   img: "speakes&panelist/Prof. Ashish Goel.png",
-      //   bio: 'Prof. Bushra Ateeq, Joy-Gill Chair Professor at IIT Kanpur, is a leading molecular oncologist. Her research focuses on cancer genomics, epigenetics, and therapy resistance, earning her the Shanti Swarup Bhatnagar Prize in Medical Sciences (2020).'
-      // },
+    
       // ===== Medical =====
       {
         name: "Prof. Sandeep Verma",
         role: "Host",
-        title: "Professor",
+        title: "Head of the Gangwal School of Medical Sciences and Technology",
         org: "IIT Kanpur",
         img: "speakes&panelist/Sandeep.jpeg",
         track: "Medical",
-        bio: 'Prof. Sandeep Verma, Head of the Gangwal School of Medical Sciences and Technology (GSMST) at IIT Kanpur, is a leading researcher in chemical biology and biomedical innovation. Known for his pioneering work at the interface of chemistry and medicine, he has been instrumental in advancing interdisciplinary approaches to healthcare and technology.'
+        bio: 'Prof. Sandeep Verma, Head of the Gangwal School of Medical Sciences and Technology (GSMST) at IIT Kanpur, is a leading researcher in chemical biology and biomedical innovation. Known for his pioneering work at the interface of chemistry and medicine, he has been instrumental in advancing interdisciplinary approaches to healthcare and technology. He is the recipient of several honors including CSIR-Shanti Swarup Bhatnagar Prize, Swarnajayanti Fellowship in Chemical Sciences, and Bronze Medal of the Chemical Research Society of India.'
       },
       {
         name: "Prof. Bushra Ateeq",
         role: "Chair",
-        title: "Professor",
+        title: "Professor and Dean of International Relations",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Bushra Ateeq.png",
         track: "Medical",
-        bio: 'Prof. Bushra Ateeq, Joy-Gill Chair Professor at IIT Kanpur, is a leading molecular oncologist. Her research focuses on cancer genomics, epigenetics, and therapy resistance, earning her the Shanti Swarup Bhatnagar Prize in Medical Sciences (2020).'
+        bio: 'Prof. Bushra Ateeq, Joy-Gill Chair Professor at Department of Biological Sciences and Bioengineering, Senior Fellow of the DBT/Wellcome Trust India Alliance.   and the current Dean of International Relations at IIT Kanpur.  She is also a Prof. Ateeq is a highly acclaimed researcher in the field of molecular oncology and cancer genomics. She works at the forefront of translational molecular oncology to understand and resolve challenging problems associated with human malignancies. She has been recognized with several accolades including the Shanti Swarup Bhatnagar Prize, and American Association for Cancer Research-Women in Cancer Research Award.'
       },
       {
         name: "Prof. Ashok Kumar",
         role: "Co - Chair",
-        title: "Professor",
+        title: "Professor and Director, IIT Kanpur - La Trobe University Research Academy",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Ashok Kumar.png",
         track: "Medical",
-        bio: 'Prof. Ashok Kumar is an Endowed Chair Professor at IIT Kanpur in Biological Sciences and Bioengineering. His research explores biomaterials, cryogel technologies, and regenerative medicine, with applications spanning healthcare and environmental biotechnology.'
+        bio: 'Prof. Ashok Kumar is Poonam & Prabhu Goel Chair   Professor at IIT Kanpur in Biological Sciences and Bioengineering. His research interests include stem cell research, regenerative medicine, biomaterials, tissue engineering, bioprocess engineering, nanobiotechnology, drug delivery and environmental biotechnology. He has developed functional bone substitutes which are in clinical trials for pediatric cranioplasty (a neurosurgical procedure to repair skull defects). He is an elected fellow of Biomaterials Science and Engineering by International Union of Societies for Biomaterials Science and Engineering (IUS-BSE).'
       },
 
 
       {
         name: "Prof. Mark Cohen",
         role: "Speaker",
-        title: "Dean",
-        org: "Carle Illinois College of Medicine,UIUC ",
+        title: "Dean, Carle Illinois College of Medicine and Senior Vice President and Chief Academic Officer, Carle Health",
+        org: "UIUC Medical School",
         img: "speakes&panelist/Prof Mark Cohen.png",
         track: "Medical",
-        bio: `Prof. Mark S. Cohen, MD, FACS, FSSO is the Dean of the Carle Illinois College of Medicine, the world’s first engineering-based medical school. A surgical oncologist and physician-engineer, he advances research in tissue engineering, nanoparticle drug delivery, and mixed-reality medical training, while also fostering healthcare innovation and entrepreneurship.
+        bio: `Prof. Mark S. Cohen, MD, FACS, FSSO is the Dean of the Carle Illinois College of Medicine, University of Illinois Urbana-Champaign, the world’s first engineering-based medical school. A surgical oncologist and endocrine surgeon, he is also a Founder Professor in The Grainger College of Engineering in the Department of Bioengineering, as well as a professor in the Beckman Institute for Advanced Science and Technology.  His area of research interests span novel approaches to tissue engineering to create functional organs from fat stem cells; creation of a novel class of anticancer drug compounds that target chaperone proteins; nanoparticle drug-delivery systems for cancer and bone regeneration; and use of mixed reality and AI/ML technologies to improve telemedicine. He is a senior member of the Association for Academic Surgery, a member of the American Association of Endocrine Surgeons, the International Association of Endocrine Surgeons and recipient of numerous awards and honors.
+
 `
       },
       {
-        name: "Prof. Michael Gardner",
+        name: "Prof Michael Gardner, MD",
         role: "Speaker",
-        title: "Professor, Orthopaedic Surgery",
+        title: "Hatim and Durriya Tyabji Endowed Professor, Orthopaedic Trauma Surgery ",
         org: "Stanford University School of Medicine ",
         img: "speakes&panelist/Prof Michael Gardner.png",
         track: "Medical",
-        bio: `Prof. Michael J. Gardner, MD is a Professor of Orthopaedic Surgery at Stanford University, where he serves as Chief of the Orthopaedic Trauma Service and Vice Chair of Clinical Operations. An authority in complex fracture management, nonunion, and malunion repair, he has published over 180 peer-reviewed papers and co-founded NSite Medical to pioneer AI-driven scoliosis diagnostics and care innovations.
+        bio: `Prof. Michael J. Gardner, MD is a Professor of Orthopaedic Surgery at Stanford University, where he serves as Chief of the Orthopaedic Trauma Service and Vice Chair of Clinical Operations. An authority in complex fracture management, nonunion, and malunion repair, he has published over 180 scientific articles publications and co-founded NSite Medical to pioneer AI-driven scoliosis diagnostics and care innovations.
+
 `
       },
       {
         name: "Prof. Manu Prakash",
         role: "Speaker",
-        title: "Associate Professor",
+        title: "Associate Professor of Bioengineering",
         org: "Stanford University",
         img: "speakes&panelist/Manu Prakash.png",
         track: "Medical",
-        bio: `Manu Prakash, B.Tech CSE (2002, IIT Kanpur), is an Associate Professor of Bioengineering at Stanford University, renowned for creating frugal, accessible scientific tools such as the Foldscope and Paperfuge. His research spans curiosity-driven science, global health innovations, and democratizing access to scientific exploration worldwide.`
+        bio: `Dr. Manu Prakash, B.Tech CSE (2002, IIT Kanpur), is an Associate Professor of Bioengineering at Stanford University, renowned for creating frugal, and creative engineering tools such as the Foldscope and Paperfuge, to address public health challenges. Dr. Prakash emphasizes the importance of democratizing science and enabling broader access to scientific tools. His work spans various fields, including biology, global health, and environmental science, striving to inspire a new generation of scientists and innovators to tackle pressing issues through ingenuity and creativity.
+`
       },
       {
         name: "Prof. Nitish Badhwar",
@@ -288,27 +239,26 @@
         org: "Stanford University School of Medicine ",
         img: "speakes&panelist/nitish bharadwaj.png",
         track: "Medical",
-        bio: 'Prof. Nitish Badhwar, MD is an internationally recognized expert in cardiac electrophysiology, specializing in catheter ablation for complex arrhythmias and innovative hybrid procedures like the aMAZE trial. A prolific educator and recipient of the ACC Distinguished Teacher Award, he has trained physicians worldwide and advanced minimally invasive approaches to heart rhythm disorders.'
+        bio: 'Prof. Nitish Badhwar, MD is an internationally recognized expert in cardiac electrophysiology, specializing in catheter ablation for complex arrhythmias and innovative hybrid procedures like the aMAZE trial. A prolific educator and recipient of the Excellence in Teaching award in Medical Education by Academy of Medical Educators, he has trained physicians worldwide and advanced minimally invasive approaches to heart rhythm disorders. He has been named best doctor in cardiac electrophysiology in San Francisco Magazine 3 years in a row (2015-2017) nominated by his peers. '
       },
 
       {
         name: "Prof. Raj Shekhar",
         role: "Panelist",
         title: "Professor, Principal Investigator & Founder",
-        org: "Children's National Hospital & AusculTech Dx",
+        org: "Children's National Hospital & AusculTech Dx & The George Washington University School of Medicine and Health Sciences",
         img: "speakes&panelist/Raj Shekhar.png",
         track: "Medical",
-        bio: `Dr. Raj Shekhar is a biomedical engineering pioneer, serving as Principal Investigator at Children's National Hospital and a Professor of Radiology and Pediatrics at George Washington University. A serial medtech entrepreneur, he co-founded startups including IGI Technologies and AusculTech Dx, which developed the StethAid—an AI-powered, smartphone-based digital stethoscope for pediatric heart murmur detection. `
+        bio: `Dr. Raj Shekhar is a biomedical engineering pioneer, serving as Principal Investigator at Children's National Hospital and a Professor of Radiology and Pediatrics at George Washington University. A serial medtech entrepreneur, he co-founded startups including IGI Technologies and AusculTech Dx, which developed the StethAid—an AI-powered, smartphone-based digital stethoscope for pediatric heart murmur detection.`
       },
       {
         name: "Prof. Jaideep Srivastava",
         role: "Panelist",
-        title: "Professor, Hubbard School of Journalism and Mass Communication",
+        title: "Professor and Director of Undergraduate Studies for Data Science",
         org: "University of Minnesota",
         img: "speakes&panelist/Prof. Jaideep Srivastava.png",
         track: "Medical",
-        bio: `Prof. Jaideep Srivastava is an expert in data mining, artificial intelligence, and computational social science, with over 400 publications and multiple patents. A Fellow of the IEEE, he has led major research projects for government agencies and global corporations, and his work spans applications from social media analytics to healthcare informatics.
-`
+        bio: `Prof. Jaideep Srivastava is an expert in databases, data mining, and multimedia systems, with over 400 publications and multiple patents. A Fellow of the IEEE, Prof. Srivastava is the co-founder and president of Ninja Metrics, Inc., a start-up company that focuses on analytics for social systems and social media. He  has led major research projects for government agencies and global corporations, and his work spans applications from social media analytics to healthcare informatics. He is the recipient of the Distinguished Research Contributions Award of the PAKDD, for his lifetime contributions to the field of data mining and IBM Faculty Award.`
       },
       {
         name: "Ms. Mihikaa Jain",
@@ -317,102 +267,110 @@
         org: "San Francisco Bay Area",
         img: "speakes&panelist/mahika.jpeg",
         track: "Medical",
-        bio: `Based in the San Francisco Bay Area, Mihikaa Jain is a Business Development Associate focused on partnerships and growth strategy. She brings a strong interest in the tech and startup ecosystem, connecting people and ideas to drive opportunities.`
+        bio: `Mihikaa Jain is an IIT Kanpur Alumnus, (2014-2019) and a BTech graduate in Bioengineering from department of Biological sciences and Bioengineering. Currently, based in the San Francisco Bay Area, Ms. Jain is a Business Development Associate focused on partnerships and growth strategy. She brings a strong interest in the biotech and startup ecosystem particularly in the cell & gene therapy space, connecting people and ideas to drive opportunities.
+`
+      },
+      {
+        name: "Prof. . Niraj Sinha",
+        role: "Panelist",
+        title: "Professor and Associated Faculty, Project Hridyantra, Gangwal School of Medical Sciences and Technology",
+        org: "IIT Kanpur ",
+        img: "speakes&panelist/neeraj Sinha.png",
+        track: "Medical",
+        bio: `Prof. Niraj Sinha is a Professor at IIT Kanpur and an Associate Faculty with Project Hridyantra at the Gangwal School of Medical Sciences and Technology. His research interests include additive manufacturing, biomaterials, biomedical engineering, prosthetic devices, and nanotechnology. With extensive research experience at the intersection of engineering and medical sciences, he has been actively contributing to innovative healthcare technologies and interdisciplinary collaborations. 
+
+`
       },
 
       // ===== Sustainability =====
       {
-        name: "Prof. Sachidanand Tripathi",
+        name: "Prof. Sachchida Nand Tripathi ",
         role: "Chair",
-        title: "Dean of Kotak School of Sustainability",
+        title: "Dean, Kotak School of Sustainability",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Sachidanand Tripathi.png",
         track: "Sustainability",
-        bio: `Prof. Sachidanand Tripathi, a renowned faculty and Dean of Kotak School of Sustainability at IIT Kanpur, specializes in sustainability, climate change, and atmospheric sciences. His research on air quality, aerosols, and urban sustainability emphasizes climate-resilient, environmentally responsible solutions, informing policies for cleaner air and sustainable cities.
-`
+        bio: `Prof. Sachidanand Tripathi, a renowned faculty and Dean of Kotak School of Sustainability at IIT Kanpur, specializes in sustainability, climate change, and atmospheric sciences. His research on air quality, aerosols, and urban sustainability emphasizes climate-resilient, environmentally responsible solutions, informing policies for cleaner air and sustainable cities.`
       },
       {
         name: "Prof. Ashish Garg",
         role: "Co - Chair",
-        title: "Head of Dept of Sustainable Energy Engineering",
+        title: "Head, Dept of Sustainable Energy Engineering",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Ashish Garg.png",
         track: "Sustainability",
-        bio: `At the Kotak School of Sustainability and Kesavan Center, IIT Kanpur, Prof. Ashish Garg advances research in materials science and engineering. His interests include functional materials for energy storage, nanotechnology, and sustainable innovations for next-generation technologies.
+        bio: `Prof. Ashish Garg is the founding Head of Dept of Sustainable Energy Engineering and Founder and Coordinator of Chandrakanta Kesavan Center at IIT Kanpur. Prof. Garg’s research interests are broadly in materials science and engineering with primary focus on functional materials for energy storage, NetZero and carbon neutrality, and sustainability.
+
 `
       },
 
       {
         name: "Dr. Nitash P. Balsara",
         role: "Speaker",
-        title: "Professor, Chemical & Biomolecular Engineering",
+        title: "The Charles W. Tobias Professor in Electrochemistry",
         org: "UC Berkeley",
         img: "speakes&panelist/Dr. Nitash P. Balsara.png",
         track: "Sustainability",
-        bio: "Dr. Nitash P. Balsara is the Charles W. Tobias Professor in Electrochemistry at UC Berkeley and a Faculty Senior Scientist at Lawrence Berkeley National Laboratory. His research focuses on nanostructured polymer electrolytes for next-generation batteries."
+        bio: "Prof. Nitash P. Balsara is the Charles W. Tobias Professor in Electrochemistry and Professor of Chemical and Biomolecular Engineering at UC Berkeley. His research work focuses on the development of polymer electrolytes that enable the rapid transport of lithium ions between the battery electrodes. His work encompasses materials design, synthesis, characterization, and performance evaluation in applications."
       },
       {
-        name: "Dr. Deepakraj M Divan",
+        name: "Prof. . Deepakraj M  Divan",
         role: "Speaker",
         title: "Director, Georgia Tech Center for Distributed Energy",
-        org: "Georgia Institute of Technology, Atlanta",
+        org: "Georgia Institute of Technology",
         img: "speakes&panelist/Dr.Deepak Divan.png",
         track: "Sustainability",
-        bio: `Dr. Deepakraj M. Divan is the John E. Pippin Chair Professor and Director of the Center for Distributed Energy at Georgia Tech, specializing in power electronics, smart grids, and distributed energy systems. 
-An IEEE Fellow and member of the U.S. National Academy of Engineering, he is known for pioneering soft-switching converters, grid-forming controls, and founding Varentec to advance smart grid innovations.`
+        bio: `Prof. Deepakraj M Divan is a Professor, John E Pippin Chair, GRA Eminent Scholar, and Director of the Center for Distributed Energy at the Georgia Institute of Technology in Atlanta, GA, specializing in power electronics, smart grids, and distributed control of power systems. Prof. Divan has numerous accolades to his credit, he is an elected member of the US National Academy of Engineering, member of the National Academies Board on Energy and Environmental Systems, a Fellow of the IEEE, past President of the IEEE Power Electronics Society etc. He has founded or seeded several new ventures including Soft Switching Technologies, Innovolt, Varentec and Smart Wires.`
 
 
       },
       {
         name: "Mr. Rajendra Bhattarai",
         role: "Speaker",
-        title: "President, Clean Water Strategies",
-        org: "Austin, Texas",
+        title: "President",
+        org: "Clean Water Strategies",
         img: "speakes&panelist/Dr Rajendra Bhattarai.png",
         track: "Sustainability",
-        bio: `Dr. Rajendra P. Bhattarai is a civil and environmental engineer who has served as President of both the Water Environment Association of Texas and the Texas Association of Clean Water Agencies. An alumnus of IIT Kanpur and UT Austin, he has led transformative water quality and wastewater infrastructure initiatives across Texas, earning numerous state and national honors for his contributions.`
+        bio: `Mr. Rajendra P. Bhattarai is the President of Clean Water Strategies in Austin, Texas. He has also served as the president of the Water Environment Association of Texas and of the Texas Association of Clean Water Agencies. An alumnus of IIT Kanpur and UT Austin, he has led transformative water quality and wastewater infrastructure initiatives across Texas, earning numerous state and national honors for his contributions.`
 
       },
       {
         name: "Dr. Manvendra K. Dubey",
         role: "Speaker",
-        title: "Senior Scientist, Earth Systems Observations",
-        org: "Los Alamos National Laboratory, USA",
+        title: "Senior Scientist",
+        org: "Earth Systems Observations Los Alamos National Laboratory, USA",
         img: "speakes&panelist/Dr. Manvendra K. Dubey.png",
         track: "Sustainability",
-        bio: `Dr. Manvendra K. Dubey is a Senior Scientist in Earth System Observations at Los Alamos National Laboratory, specializing in atmospheric chemistry, aerosol–cloud–climate interactions, and greenhouse gas measurements. He has pioneered methane and black carbon monitoring networks, led international field campaigns, contributed to IPCC climate assessments, and received DOE and LANL awards for scientific excellence.
-
-
+        bio: `Dr. Manvendra K. Dubey is a Senior Scientist in Earth System Observations at Los Alamos National Laboratory. He is one of the pioneering scientists studying the interactions between wildfire smoke, solar radiation and clouds, and their impact on society. He discovered the methane hot spot at Four Corners and developed methods to verify power plant CO2 emissions. Owing to his key contributions, Dr. Dubey has been recognized as an American Association for the Advancement of Science fellow, a Fulbright fellow and a Los Alamos Laboratory Fellow.
 `
       },
       {
-        name: "Prof. Aditi Sheshadri",
+        name: "Dr. Aditi Sheshadri",
         role: "Panelist",
-        title: "Assistant Professor of Earth System Science",
+        title: "Assistant Professor, Dept of Earth System Science",
         org: "Stanford University",
         img: "speakes&panelist/Prof. Sheshadri.png",
         track: "Sustainability",
-        bio: `Dr. Aditi Sheshadri is an Assistant Professor of Earth System Science at Stanford University and a Center Fellow at the Woods Institute for the Environment. She researches large-scale atmospheric dynamics, exploring jet streams, storm tracks, the polar vortex, and gravity waves. Combining theory, observations, and modeling, her work advances understanding of weather patterns and their role in the climate system.`
+        bio: `Dr. Aditi Sheshadri is an Assistant Professor of Earth System Science at Stanford University and a Center Fellow at the Woods Institute for the Environment. Her broad research interests include, atmosphere and ocean dynamics, climate variability, and general circulation particularly addressing fundamental questions in atmospheric dynamics.`
       },
       {
         name: "Dr. Nanditha J S",
         role: "Panelist",
-        title: "Assistant Professor",
-        org: " Kotak School of Sustainability, IIT Kanpur",
+        title: "Assistant Professor, Kotak School of Sustainability",
+        org: "IIT Kanpur",
         img: "speakes&panelist/Dr. Nanditha J S.png",
         track: "Sustainability",
-        bio: `Dr. Nanditha J. S. is an Assistant Professor in the Kotak School of Sustainability at IIT Kanpur, specializing in Water Resources Engineering. Her work focuses on advancing sustainable water systems and environmental stewardship through both research and practical initiatives. 
-
+        bio: `Dr. Nanditha J. S. is an Assistant Professor at the Kotak School of Sustainability, IIT Kanpur, is a trained hydrologist, with primary research interest in the areas of hydroclimatic extremes such as droughts, floods, heatwaves, and extreme precipitation. Her work focuses on understanding climate change impacts and hydroclimatic extremes to build a sustainable future.
 `
       },
       {
         name: "Dr. Praneet Prakash",
         role: "Panelist",
-        title: "Assistant Professor",
-        org: " Kotak School of Sustainability, IIT Kanpur",
+        title: "Assistant Professor, Kotak School of Sustainability",
+        org: "IIT Kanpur",
         img: "speakes&panelist/Dr. Praneet Prakash.png",
         track: "Sustainability",
-        bio: `Dr. Praneet Prakash is an Assistant Professor in the Kotak School of Sustainability at IIT Kanpur. He earned his PhD from the Indian Institute of Science, Bangalore, and was a postdoctoral researcher at the University of Cambridge. His research spans microbial biophysics, biofluids, complex living systems, and sustainable micro/nano-scale sensing technologies. 
+        bio: `Dr. Praneet Prakash is an Assistant Professor in the Kotak School of Sustainability at IIT Kanpur. He earned his PhD from the Indian Institute of Science, Bangalore, and was a postdoctoral researcher at the University of Cambridge. His research spans microbial biophysics, biofluids, and complex living systems. 
 `
       },
       {
@@ -422,57 +380,64 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         org: "MIT Energy Initiative",
         img: "speakes&panelist/Dr. Deepjyoti Deka.png",
         track: "Sustainability",
-        bio: `Dr. Deepjyoti Deka is a Research Scientist at the MIT Energy Initiative, where he develops AI-driven optimization and sensing methods to enable secure, renewable-rich power grids. Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive experience applying data science and physics-informed machine learning to energy and cyber-physical systems, and is a senior IEEE member. 
+        bio: `Dr. Deepjyoti Deka is a Research Scientist at the MIT Energy Initiative, where he 
+Deepjyoti Deka is a research scientist at the MIT Energy Initiative, focusing on machine learning and optimization in renewable-rich power grids.
+Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive experience applying data science and physics-informed machine learning to energy and cyber-physical systems and is a senior IEEE member. 
 `
       },
       // ===== AI & Cybersecurity =====
       {
         name: "Prof. Nitin Saxena",
         role: "Chair",
-        title: "Professor",
+        title: "Dean, Wadhwani School of AI & Intelligent Systems",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Nitin Saxena.png",
         track: "AI",
-        bio: `Prof. Nitin Saxena is a faculty member in the Department of Computer Science and Engineering at IIT Kanpur. He is widely recognized for his work in artificial intelligence, algorithms, and computational complexity, with impactful research contributions shaping theoretical computer science and AI applications.
+        bio: `Prof. Nitin Saxena is a faculty member in the Department of Computer Science and Engineering at IIT Kanpur. He is the inaugural Dean of Wadhwani School of AI & Intelligent Systems IIT Kanpur. Broad areas of Prof. Saxena’s research interests are Complexity, Algebra/ Geometry/Number Theory, Cryptography, and AI product-development for the local economy. Prof. Saxena has numerous awards and recognition to his credit. He has received multiple national and international honors for his research contributions, including the coveted Gödel Prize, and the Fulkerson Prize.
 `
       },
       {
         name: "Prof. Indranil Saha",
         role: "Co - Chair",
-        title: "Professor",
-        org: "IIT Kanpur",
+        title: "Head, Department of Intelligent Systems ",
+        org: "Wadhwani School of AI and Intelligent Systems IIT Kanpur",
         img: "speakes&panelist/indranil saha.png",
         track: "AI",
-        bio: `Prof. Indranil Saha, faculty at IIT Kanpur, specializes in formal methods, cyber-physical systems, and robotics. He is the founding Head of the Department of Intelligent Systems, with research spanning embedded systems, multi-robot planning, and verification.
+        bio: `Prof. Indranil Saha, faculty at IIT Kanpur, specializes in application of formal methods and Artificial Intelligence to embedded and cyber-physical systems, and robotics. He is the founding Head of the Department of Intelligent Systems, Wadhwani School of AI and Intelligent Systems at IIT Kanpur. 
+
 `
       },
 
       {
         name: "Prof. Sanjit Seshia",
         role: "Speaker",
-        title: "Professor in the Department of Electrical Engineering and Computer Sciences",
+        title: "Cadence Founders Chair Professor,  Department of Electrical Engineering and Computer Sciences",
         org: "University of California, Berkeley",
         img: "speakes&panelist/Sanjit Seshia.png",
         track: "AI",
-        bio: `Sanjit A. Seshia is the Cadence Founders Chair Professor of Electrical Engineering and Computer Sciences at UC Berkeley. An IIT Bombay graduate with a Ph.D. from Carnegie Mellon, he is a leading researcher in formal methods, with influential contributions to verification, synthesis, and their applications in AI, security, and cyber-physical systems.`
+        bio: `Prof. Sanjit A. Seshia is the Cadence Founders Chair Professor of Electrical Engineering and Computer Sciences at UC Berkeley. An IIT Bombay graduate with a Ph.D. from Carnegie Mellon University, he is a leading researcher in formal methods for dependable and secure computing, with a current focus on the areas of cyber-physical systems, computer security, machine learning, and robotics. A Fellow of the ACM and the IEEE, Prof. Seshia has multiple awards and honors to his credit including the Presidential Early Career Award for Scientists and Engineers (PECASE) and  the Distinguished Alumnus Award from IIT Bombay. 
+
+`
       },
       {
         name: "Prof. Rajesh Gupta",
         role: "Speaker",
-        title: "Dean of School of Computing, Information and Data Science",
-        org: "University of California",
+        title: "Distinguished Professor and Dean of the School of Computing, Information and Data Science and Founding Director of the  Halıcıoğlu Data Science Institute",
+        org: "University of California, San Diego",
         img: "speakes&panelist/rajesh gupta.jpeg",
         track: "AI",
-        bio: `Rajesh K. Gupta is Dean of the School of Computing, Information and Data Science at UC San Diego.He served as the founding director of the Halicioglu Data Science Institute (HDSI) and Chair of the Computer Science and Engineering department, where he is currently a distinguished Professor. An IEEE and ACM Fellow, he has authored 150+ publications and received the IEEE W. Wallace McDowell Award for his pioneering contributions to microelectronic systems design.`
+        bio: `Prof. Rajesh K. Gupta is Dean of the School of Computing, Information and Data Science at UC San Diego. He is also the founding director of the Halicioglu Data Science Institute (HDSI) and Chair of the Computer Science and Engineering department, where he is currently a distinguished Professor. Prof. Gupta’s research is in embedded and cyber-physical systems with a focus on sensor data organization and its use in optimization and analytics. An IEEE and ACM Fellow, he has authored 150+ publications and received the Excellence in Stewardship Award from UC San Diego Foundation, the IEEE Computer Society W. Wallace McDowell Award, Distinguished Alumnus Award from IIT Kanpur, IEEE TCCPS Distinguished Leadership Award, and the National Science Foundation CAREER Award for his pioneering research contributions.`
       },
       {
         name: "Prof. Ketan Rajawat",
         role: "Moderator",
-        title: "Associate Professor ",
+        title: "Professor ",
         org: "IIT Kanpur",
         img: "speakes&panelist/Prof. Ketan Rajawat.png",
         track: "AI",
-        bio: `A faculty member in Electrical Engineering at IIT Kanpur, Prof. Rajawat’s work spans signal processing, wireless communication, and machine learning. He is widely recognized for bridging theory with practical applications in modern networks.
+        bio: `A faculty member in Electrical Engineering at IIT Kanpur, Prof. Rajawat’s work spans applications of signal processing to wireless communications, and machine learning. He is widely recognized for bridging theory with practical applications in modern networks. He is the recipient of the Qualcomm Faculty Award, 2024 among other notable recognitions.
+otable recognitions.
+
 
 
 `
@@ -481,10 +446,11 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         name: "Prof. Somitra Sanadhya",
         role: "Panelist",
         title: "Professor ",
-        org: "Wadhwani School of AI and Intelligent Systems",
+        org: "Wadhwani School of AI and Intelligent Systems, IIT Kanpur",
         img: "speakes&panelist/Prof. Somitra Sanadhya.png",
         track: "AI",
-        bio: `Professor at the Wadhwani School of AI and Intelligent Systems, Prof. Sanadhya works at the crossroads of AI, cybersecurity, and intelligent computing. He is passionate about applying AI to real-world challenges and mentoring the next generation of researchers.
+        bio: `Professor at the Wadhwani School of AI and Intelligent Systems, Prof. Sanadhya specializes in Cryptology, Security, Blockchain, and Quantum Computation. He is passionate about applying his research  to real-world challenges and mentoring the next generation of researchers.
+
 
 `
       },
@@ -502,11 +468,12 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
       {
         name: "Prof. C Seshadri",
         role: "Panelist",
-        title: "Professor",
-        org: "University of California, Santa Cruz",
+        title: "Professor of Computer Science",
+        org: "University of California, Santa Cruz ",
         img: "speakes&panelist/C Seshadri.png",
         track: "AI",
-        bio: `Prof. C. Seshadhri is a Professor of Computer Science at UC Santa Cruz, specializing in graph algorithms, randomized methods, and large-scale data analysis. An alumnus of IIT Kanpur and Princeton, his award-winning research bridges theoretical computer science and data mining.
+        bio: `Prof. C. Seshadhri is a Professor of Computer Science at UC Santa Cruz and an Amazon scholar, specializing in theoretical study of graph algorithms, randomized methods, and large-scale data analysis. An alumnus of IIT Kanpur and Princeton, his award-winning research bridges theoretical computer science and data mining. He was awarded the 2019 SDM/IBM Early Career Award for Excellence in Data Analytics amongst several other recognitions.
+
 
 
 `
@@ -515,20 +482,21 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
         name: "Mr. Paritosh Anand",
         role: "Panelist",
         title: "Chief AI and Digital Officer",
-        org: "Wadhwani Foundation",
-        img: "speakes&panelist/Paritosh Anand.png",
+        org: "Wadhwani Foundation, India",
+        img: "speakes&panelist/paritosh anand.png",
         track: "AI",
-        bio: `Mr. Paritosh Anand is the Chief AI & Digital Officer at the Wadhwani Foundation, where he drives AI-powered programs for India’s agriculture and digital governance sectors, fostering collaborations across government, academia, and industry. With over two decades of leadership experience at GE, Deloitte, Eaton, and Reliance, he brings deep expertise in data science, analytics, and large-scale digital transformation.
+        bio: `Mr. Paritosh Anand is the Chief AI & Digital Officer at the Wadhwani Foundation, where he drives AI-powered programs for India’s agriculture and digital governance sectors, fostering collaborations across government, academia, and industry. With over two decades of leadership experience at Genpact, Deloitte, Eaton, and Reliance, he brings deep expertise in data science, analytics, and large-scale digital transformation in the public sector.
+
 `
       },
       {
         name: "Dr. Barna Saha",
         role: "Panelist",
-        title: "Associate Professor",
-        org: "University of California, Berkeley",
+        title: "Director, The National NSF TRIPODS Institute for Emerging CORE Methods in Data Science (EnCORE)",
+        org: "University of California San Diego",
         img: "speakes&panelist/WhatsApp Image 2025-08-21 at 16.36.14.jpeg",
         track: "AI",
-        bio: `Dr. Barna Saha is an Associate Professor of Computer Science at UC San Diego and a Jacobs Faculty Scholar. Her research spans algorithms, probability, optimization, and large-scale data management, with applications in AI and secure computing. She is a Sloan Fellow, NSF CAREER awardee, and recipient of the Presidential Early Career Award for Scientists and Engineers.
+        bio: `Dr. Barna Saha is an Associate Professor of Computer Science at UC San Diego and a Jacobs Faculty Scholar. Her interests span theoretical computer science, specifically algorithm design and fine-grained complexity leading to enhanced computation efficiency and practical solutions. She is a Sloan Fellow, NSF CAREER awardee, and recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) and Young Alumnus Awardee of IIT Kanpur. 
 
 `
       },
@@ -771,17 +739,30 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
     }
 
     .topic-badge {
+      margin-top: auto;
       background: #eaf4fa;
       color: #3A81AD;
       border-radius: 999px;
       padding: 3px 10px;
-      font-size: 0.8rem;
+      font-size: 1rem;
       font-weight: 600;
       display: inline-block;
+      width: fit-content;       /* ✅ button bas jitna text utna hi width lega */
+  align-self: center;
     }
+    .speakers-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
+.speakers-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
     .read-bio-btn {
-      margin-top: 8px;
+      margin-top: auto;
       padding: 8px 12px;
       border: 0;
       border-radius: 10px;
@@ -789,6 +770,8 @@ An IEEE Fellow and member of the U.S. National Academy of Engineering, he is kno
       cursor: pointer;
       background: #3A81AD;
       color: #fff;
+      width: fit-content;       /* ✅ button bas jitna text utna hi width lega */
+  align-self: center;
     }
 
     .read-bio-btn:hover {
