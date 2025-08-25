@@ -250,189 +250,194 @@
   <style>
     .agenda-page {
       padding: 20px;
-      font-family: 'nunito', sans-serif;
+      font-family: 'Nunito', sans-serif;
+      background: #f9fbfc;
     }
     
     .agenda-box {
       max-width: 900px;
       margin: 0 auto;
       background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
-      padding: 20px;
-      overflow-x: auto; /* allows scroll if really needed */
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      padding: 25px;
+      overflow-x: auto;
     }
     
     .agenda-box h2 {
       text-align: center;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
       font-family: 'Raleway', sans-serif;
       font-weight: 700;
-      color: #3A81AD;
+      color: #2a6f97;
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
     }
     
     .agenda-header,
     .agenda-row {
       display: grid;
-      grid-template-columns: 1fr 1fr 3fr;
-      gap: 10px;
-      padding: 8px 12px;
+      grid-template-columns: 180px 1fr;
+      gap: 16px;
+      padding: 12px 16px;
       align-items: center;
     }
     
     .agenda-header {
       font-weight: 700;
-      background: #3A81AD;
+      background: #2a6f97;
       color: #fff;
-      border-radius: 8px;
+      border-radius: 10px;
+      font-size: 1rem;
     }
     
     .agenda-row {
-      border-bottom: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e6e6e6;
+      transition: background 0.2s ease;
+    }
+    
+    .agenda-row:hover {
+      background: #f7fafd;
     }
     
     .agenda-row:last-child {
       border-bottom: none;
     }
     
-    .time, .duration, .session {
-      font-size: 0.9rem;
+    .time {
+      font-weight: 600;
+      color: #2a6f97;
+      font-size: 0.95rem;
+      white-space: nowrap;
+    }
+    
+    .session {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      color: #444;
     }
     
     /* Lunch row styling */
     .lunch-row {
       text-align: center;
       font-weight: 700;
-      padding: 10px;
-      background: #f1f1f1;
+      padding: 12px;
+      background: #f1f5f9;
       border-radius: 8px;
-      margin: 8px 0;
+      margin: 12px 0;
       font-family: 'Raleway', sans-serif;
+      color: #2a6f97;
+      letter-spacing: 0.5px;
     }
     
     /* Responsive adjustments */
     @media (max-width: 768px) {
-      .agenda-header, .agenda-row {
-        grid-template-columns: 1fr 1fr 2fr; /* adjust for small screens */
-        font-size: 0.85rem;
-      }
-    }
-    
-    @media (max-width: 480px) {
-      .agenda-header, .agenda-row {
-        grid-template-columns: 1fr; /* stack vertically */
-        row-gap: 5px;
-      }
-    
-      .agenda-header div {
-        display: none; /* hide header labels on very small screens */
-      }
-    
+      .agenda-header,
       .agenda-row {
-        padding: 8px 6px;
-      }
-    
-      .agenda-row div::before {
-        content: attr(class) ": "; /* show label before value */
-        font-weight: 700;
-        text-transform: capitalize;
+        grid-template-columns: 120px 1fr;
+        font-size: 0.9rem;
       }
     }
-    @media (max-width: 480px) {
-  .agenda-header div {
-    display: none; /* hide header labels on very small screens */
-  }
-}
-
-    </style>
     
-<div class="agenda-page">
-  <div class="agenda-box">
-    <h2>FACE Symposium 2025 – Agenda</h2>
-
-    <div class="agenda-header">
-      <div>Time</div>
-      <div>Duration</div>
-      <div>Session</div>
+    @media (max-width: 480px) {
+      .agenda-header {
+        display: none;
+      }
+      
+      .agenda-row {
+        display: block;
+        padding: 10px;
+      }
+      
+      .time {
+        display: block;
+        margin-bottom: 4px;
+        font-size: 0.9rem;
+        color: #2a6f97;
+      }
+      
+      .session {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+  
+    
+    <div class="agenda-page">
+      <div class="agenda-box">
+        <h2>FACE Symposium 2025 – Agenda</h2>
+    
+        <div class="agenda-header">
+          <div>Time</div>
+          <div>Session</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">8:00 am – 8:30 am</div>
+          <div class="session">Registration, Networking & Live Breakfast</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">8:30 am – 8:35 am</div>
+          <div class="session">Address by Prof. Ashish Goel, Professor of Management Science and Engineering and (by courtesy) Computer Science, Stanford University</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">8:35 am – 8:50 am</div>
+          <div class="session">Welcome Address by Prof. Manindra Agrawal, Director, IIT Kanpur</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">8:50 am – 10:50 am</div>
+          <div class="session">Track 1: Innovations in Medical Devices, Diagnostics & Therapeutics</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">10:50 am – 11:00 am</div>
+          <div class="session">Tea Break</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">11:00 am – 1:00 pm</div>
+          <div class="session">Track 2: Sustainability</div>
+        </div>
+    
+        <!-- Lunch separator -->
+        <div class="lunch-row">Lunch</div>
+    
+        <div class="agenda-row">
+          <div class="time">2:00 pm – 2:30 pm</div>
+          <div class="session">Keynote Address (Speaker TBD)</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">2:30 pm – 4:15 pm</div>
+          <div class="session">Track 3: AI & Cybersecurity</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">4:15 pm – 4:30 pm</div>
+          <div class="session">Tea Break</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">4:30 pm – 5:45 pm</div>
+          <div class="session">Faculty Prospect Interaction Session (Parallel Session)</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">5:45 pm – 6:00 pm</div>
+          <div class="session">Closing Plenary – Prof. Amey Karkare, <br/> Dean of Resources and Alumni, IIT Kanpur</div>
+        </div>
+    
+        <div class="agenda-row">
+          <div class="time">6:00 pm onwards</div>
+          <div class="session">Reception</div>
+        </div>
+    
+      </div>
     </div>
-
-    <div class="agenda-row">
-      <div class="time">8:00 am – 8:30 am</div>
-      <div class="duration">30 min</div>
-      <div class="session">Registration, Networking & Live Breakfast</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">8:30 am – 8:35 am</div>
-      <div class="duration">5 min</div>
-      <div class="session">Address by Prof. Ashish Goel, Professor of Management Science and Engineering and (by courtesy) Computer Science</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">8:35 am – 8:50 am</div>
-      <div class="duration">15 min</div>
-      <div class="session">Welcome Address by Prof. Manindra Agrawal, Director, IIT Kanpur</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">8:50 am – 10:50 am</div>
-      <div class="duration">120 min</div>
-      <div class="session">Track 1: Innovations in Medical Devices, Diagnostics & Therapeutics</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">10:50 am – 11:00 am</div>
-      <div class="duration">10 min</div>
-      <div class="session">Tea Break</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">11:00 am – 1:00 pm</div>
-      <div class="duration">120 min</div>
-      <div class="session">Track 2: Sustainability</div>
-    </div>
-
-    <!-- Lunch separator -->
-    <div class="lunch-row">Lunch</div>
-
-    <div class="agenda-row">
-      <div class="time">2:00 pm – 2:30 pm</div>
-      <div class="duration">30 min</div>
-      <div class="session">Keynote Address (Speaker TBD)</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">2:30 pm – 4:15 pm</div>
-      <div class="duration">105 min</div>
-      <div class="session">Track 3: AI & Cybersecurity</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">4:15 pm – 4:30 pm</div>
-      <div class="duration">15 min</div>
-      <div class="session">Tea Break</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">4:30 pm – 5:45 pm</div>
-      <div class="duration">75 min</div>
-      <div class="session">Faculty Prospect Interaction Session (Parallel Session)</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">5:45 pm – 6:00 pm</div>
-      <div class="duration">15 min</div>
-      <div class="session">Closing Plenary – Prof. Amey Karkare, <br/> Dean of Resources and Alumni, IIT Kanpur</div>
-    </div>
-
-    <div class="agenda-row">
-      <div class="time">6:00 pm onwards</div>
-      <div class="duration">—</div>
-      <div class="session">Reception</div>
-    </div>
-
-  </div>
-</div>
+    
 
 
   <!-- Shaping Section -->
