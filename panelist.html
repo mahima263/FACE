@@ -63,12 +63,12 @@
 
 
   <!-- Page Header -->
- 
+
 
   </header>
 
-  <!-- Filter / Search Bar -->
-  
+  <!--Co-chair -->
+
   <section id="featured-static" class="container my-5" aria-label="Featured speakers static">
     <h2 class="text-center mb-5 panelist-title">
       <span class="highlight green"> CONFERENCE CO - CHAIRS</span>
@@ -78,11 +78,12 @@
       <!-- Card A -->
       <div class="col-12 col-md-6 col-lg-5">
         <article class="card h-100 text-center shadow border-0 rounded-4 overflow-hidden">
-          <img src="speakes&panelist/ratnesh.jpeg" class="card-img-top img-fluid" alt="Prof. Ratnesh Kumar">
+          <img src="speakes&panelist/Ratnesh.jpg" class="card-img-top img-fluid" alt="Prof. Ratnesh Kumar">
 
           <div class="card-body p-4">
             <h3 class="card-title fw-bold mb-2">Prof. Ratnesh Kumar</h3>
-            <p class="role text-muted mb-1">Barbara and James R. Palmer Professor, Professor Dept of Electrical & Computer Engineering</p>
+            <p class="role text-muted mb-1">Barbara and James R. Palmer Professor, Professor Dept of Electrical &
+              Computer Engineering</p>
             <p class="org fw-medium text-secondary mb-1">Iowa State University, USA
             </p>
 
@@ -105,7 +106,8 @@
 
           <div class="card-body p-4">
             <h3 class="card-title fw-bold mb-2">Prof. Ashish Goel</h3>
-            <p class="role text-muted mb-1">Professor of Management Science and Engineering and (by courtesy) Computer Science 
+            <p class="role text-muted mb-1">Professor of Management Science and Engineering and (by courtesy) Computer
+              Science
             </p>
             <p class="org fw-medium text-secondary mb-1">Stanford University
             </p>
@@ -172,11 +174,11 @@
   <script>
     // ---------- DATA: edit bios/titles/orgs here ----------
     const PEOPLE = [
-    
+
       // ===== Medical =====
       {
         name: "Prof. Sandeep Verma",
-        role: "Host",
+        role: "Chair",
         title: "Head of the Gangwal School of Medical Sciences and Technology",
         org: "IIT Kanpur",
         img: "speakes&panelist/Sandeep.jpeg",
@@ -185,7 +187,7 @@
       },
       {
         name: "Prof. Bushra Ateeq",
-        role: "Chair",
+        role: "Co - Chair",
         title: "Professor and Dean of International Relations",
         org: "IIT Kanpur",
         img: "speakes&panelist/bushra Ateeq.jpeg",
@@ -693,7 +695,8 @@ Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive e
         qs("#" + id).addEventListener("change", applyFilters);
       });
     });
-
+  </script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
       const navbarCollapse = document.getElementById('navMenu');
@@ -761,20 +764,23 @@ Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive e
       font-size: 1rem;
       font-weight: 600;
       display: inline-block;
-      width: fit-content;       /* ✅ button bas jitna text utna hi width lega */
-  align-self: center;
+      width: fit-content;
+      /* ✅ button bas jitna text utna hi width lega */
+      align-self: center;
     }
-    .speakers-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 
-.speakers-card-body {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
+    .speakers-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .speakers-card-body {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
     .read-bio-btn {
       margin-top: auto;
       padding: 8px 12px;
@@ -784,8 +790,9 @@ Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive e
       cursor: pointer;
       background: #3A81AD;
       color: #fff;
-      width: fit-content;       /* ✅ button bas jitna text utna hi width lega */
-  align-self: center;
+      width: fit-content;
+      /* ✅ button bas jitna text utna hi width lega */
+      align-self: center;
     }
 
     .read-bio-btn:hover {
@@ -837,6 +844,8 @@ Formerly a Staff Scientist at Los Alamos National Laboratory, he has extensive e
       color: #6b7280;
     }
   </style>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
